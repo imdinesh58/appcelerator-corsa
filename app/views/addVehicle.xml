@@ -1,0 +1,28 @@
+<Alloy>
+	<!-- Android -->
+	<Window id="win1" platform="android" onOpen="load" onAndroid:back="closeWindow">
+		<TextField  id = "carmake" class="commontext"></TextField>
+		<TextField  id = "carmodel" class="commontext"></TextField>
+		<TextField  id = "caryear" platform="android" class="commontext"></TextField>
+		<TextField  id = "carseats" platform="android" class="commontext"></TextField>
+		<TextField  id = "carmileage" platform="android" class="commontext" onBlur="Validatemiles"></TextField>
+		<TextField  id = "carseats" platform="android" class="commontext"></TextField>
+		<Label id="add" class="commonlabel" platform="android" onSingletap="Validatecarseats">Save</Label>
+	</Window>
+	<!-- IOs -->
+	<NavigationWindow id="win1" platform="ios">
+	<Window class="container" id="win2" platform="ios" onOpen="load" title="Add Vehicle" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+		<LeftNavButton>
+			 <ImageView  class="commonBack" onClick="closeWindow" platform="ios"></ImageView>
+		</LeftNavButton>
+		<ScrollView height="90%" width="100%">
+		<TextField  id = "carmake"  class="commontext"></TextField>
+		<TextField  id = "carmodel"  class="commontext"></TextField>
+		<TextField  id = "carmileage" platform="ios" class="commontext" onBlur="Validatemiles"></TextField>
+		<TextField  id = "caryear" platform="ios" class="commontext"></TextField>
+		<TextField  id = "carseats" platform="ios" class="commontext"></TextField>
+		<Label id="add" class="commonlabel" platform="ios" onSingletap="Validatecarseats">Save</Label>
+		</ScrollView>
+	</Window>
+	</NavigationWindow>
+</Alloy>

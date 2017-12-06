@@ -1,0 +1,32 @@
+"#winFriends":{
+	backgroundImage : '/icons/ucorsaHome.png',
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+    titleAttributes:  {
+       color:'white',
+       font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+		}
+    }
+}
+
+"#tableFriends[platform=android]": {
+	top: '0%',
+	left: '0%',
+	height: '100%',
+	width: '100%',
+	scrollable:true,
+	backgroundColor : '#E3DED6',
+	separatorColor : 'white' //DCDAD1
+}
+
+"#tableFriends[platform=ios]": {
+	top: '0%',
+	left: '0%',
+	height: '100%',
+	width: '100%',
+	scrollable:true,
+	backgroundColor : '#E3DED6',
+	separatorColor : 'white' //DCDAD1
+}

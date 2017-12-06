@@ -1,0 +1,17 @@
+
+"#img":{
+	//backgroundImage: '/images/applogo.png',
+	backgroundImage: '/applogo.png',
+	top: "16%",
+	width: "45%",
+	height: "25%",
+	left: '28%'
+}
+
+'#signin': {
+	left: '5%'
+}
+
+'#register': {
+	right: '5%'
+}

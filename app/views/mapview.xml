@@ -1,0 +1,42 @@
+<Alloy>
+	<!-- Android -->
+	<Window id="ridefrom" onOpen="load" platform="android" windowSoftInputMode="Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN" onAndroid:back="CloseWindow">
+		<TextField id ="txtrideFrom" platform="android" class="common_text" onChange="FromLocation"></TextField>
+		<TextField id ="txtrideTo" platform="android" class="common_text"  onChange="ToLocation"></TextField>
+		<Label id ="swap" platform="android"></Label>
+		<View id="container">
+			<TableView id="autocomplete_table" onClick="GetLocation1"></TableView>
+		</View>
+		<View id="container2">
+			<TableView id="autocomplete_table2" onClick="GetLocation2"></TableView>
+		</View>
+		<View id="mapView" height="100%" width="100%" top="35%" platform="android" windowSoftInputMode="Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN">
+			<Module id="map1" module="ti.map" method="createView" platform="android"></Module>
+			<Label id="clear" onSingletap="clear" platform="android">Clear</Label>
+		</View>
+	</Window>
+	<!-- ios -->
+	<NavigationWindow id="ridefrom" platform="ios">
+		<Window id="ridefrom1" onOpen="load" platform="ios" title="Pick Locations" class="container" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+			<LeftNavButton>
+				<ImageView  class="commonBack" onClick="CloseWindow" platform="ios"></ImageView>
+			</LeftNavButton>
+			<RightNavButton>
+				<Label id="done" onClick="CloseWindow" platform="ios">Done</Label>
+			</RightNavButton>
+			<TextField id ="txtrideFrom" platform="ios" class="common_text_" onChange="FromLocation"></TextField>
+			<TextField id ="txtrideTo" platform="ios" class="common_text_" onChange="ToLocation"></TextField>
+			<Label id ="swap" platform="ios"></Label>
+			<View id="container">
+				<TableView id="autocomplete_table" onClick="GetLocation1"></TableView>
+			</View>
+			<View id="container2">
+				<TableView id="autocomplete_table2" onClick="GetLocation2"></TableView>
+			</View>
+			<View id="mapView" height="100%" width="100%" top="35%" platform="ios">
+				<Module id="map1" module="ti.map" method="createView" platform="ios"></Module>
+				<Label id="clear" onSingletap="clear" platform="ios">Clear</Label>
+			</View>
+		</Window>
+	</NavigationWindow>
+</Alloy>

@@ -1,0 +1,321 @@
+"#win[platform=android]":{
+	backgroundColor : "#F2EFE8",
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+    titleAttributes:  {
+       color:'white',
+       font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+		}
+    },
+    zIndex : -1
+}
+"#win[platform=ios]":{
+	backgroundColor : "#F2EFE8",
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+    titleAttributes:  {
+       color:'white',
+       font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+		}
+    },
+    zIndex : -1
+    //theme: "Theme.AppCompat.NoTitleBar"
+}
+"#menuIos":{
+	backgroundImage: '/home.png',
+	width: 30,
+	height: 30,
+	left : '3%',
+	top : '5%'
+}
+"#update":{
+	//backgroundImage: '/update.png',
+	width: 30,
+	height: 30,
+	left : '15%',
+	top : '5%'
+}
+
+"#version":{
+	bottom: '1%',
+	left : "0%",
+	width: '100%',
+	height: 'auto',
+	color: '#92857A',
+	font: {
+		fontSize: "8sp"
+	}
+}
+
+"#Logout":{
+	top: '3%',
+	left: '1%',
+	width: '20%',
+	height: '8%',
+	color: 'white',
+	font: {
+		fontSize: "15sp",
+		fontWeight: 'bold'
+	}
+}
+
+"#tableview": {
+	top: '13%',
+	left: '0%',
+	height: '90%',
+	width: '100%',
+	backgroundImage: '/table.png'
+}
+"#mainview":{
+	top: "0%",
+	height: "100%",
+	width: "100%",
+	backgroundImage : '/icons/ucorsaHome.png',
+}
+
+'.HomeLabel':{
+	left : '10%',
+	width: '80%',
+	color: 'white',
+	textAlign : 'center',
+	font: {
+		fontSize: '20sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	height : '12%',
+	borderRadius : 6,
+	backgroundColor : '#001E45'
+}
+
+///
+".Home_Lbl[platform=android]":{
+	width: 'auto',
+	color: '#92857A',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	}
+}
+".Home_Lbl[platform=ios]":{
+	width: 'auto',
+	color: '#92857A',
+	font: {
+		fontSize: '13sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	}
+}
+///
+".Home_IMG":{
+	width: '80dp',
+	height: '80dp'
+}
+///Image
+"#uRide_":{
+	top : '10%',
+}
+"#uDrive_":{
+	top : '24%'
+}
+"#ucarpool_":{
+	top : '38%'
+}
+
+//android
+"#uRide[platform=android]":{
+	top: '11%',
+	left: "15%",
+	width: 50,
+	height : 50,
+	backgroundImage: '/images/uride.png'
+}
+"#uDrive[platform=android]":{
+	top: '25%',
+	left: "15%",
+	width: 50,
+	height : 50,
+	backgroundImage: '/images/u_drive_reverse.png'
+}
+"#uCarPool[platform=android]":{
+	top: '39%',
+	left: "15%",
+	width: 50,
+	height : 50,
+	backgroundImage: '/images/carpool.png'
+}
+"#options[platform=android]":{
+	top: '53%',
+	left : "12%",
+	backgroundImage: '/images/details.png',
+	width: 25,
+	height: 25
+}
+//ios
+"#uRide[platform=ios]":{
+	top: '13%',  // for 5.5 =  12  // for 4 inch  = 10
+	left: "15%",
+	width: 30,
+	height : 30,
+	backgroundImage: '/converted/uride.png'
+}
+"#uDrive[platform=ios]":{
+	top: '27%',
+	left: "15%",
+	width: 30,
+	height : 30,
+	backgroundImage: '/converted/u_drive_reverse.png'
+}
+"#uCarPool[platform=ios]":{
+	top: '41.5%',
+	left: "15%",
+	width: 30,
+	height : 30,
+	backgroundImage: '/converted/carpool.png'
+}
+"#options[platform=ios]":{
+	top: '53.5%',
+	left : "12%",
+	backgroundImage: '/converted/details.png',
+	width: 25,
+	height: 25
+}
+///options name
+"#options_[platform=ios]":{
+	top: '52.2%', // 51.3
+	left : "20%",  //17
+	width: '40%',
+	height: '8%',
+	color: '#92857A',
+	font: {
+		fontSize: "15sp",
+		fontWeight: 'bold'
+	}
+}
+"#options_[platform=android]":{
+	top: '51.3%',
+	left : "17%",
+	width: '40%',
+	height: '8%',
+	color: '#92857A',
+	font: {
+		fontSize: "15sp",
+		fontWeight: 'bold'
+	}
+}
+"#Details[platform=android]":{
+	backgroundImage : '/icons/details.png',
+	top: '8%',
+	height : 260,
+	width : 260,
+	left : '12%',
+	borderRadius : 6
+}
+"#Details[platform=ios]":{
+	backgroundImage : '/icons/details.png',
+	top: '10%',
+	height : 230, // 280
+	width : 230, //280
+	left : '16%',
+	borderRadius : 6
+}
+"#contacts[platform=android]":{
+	top: '65%',
+	left: "5%",
+	backgroundImage: '/common/Contacts.png',
+	width: 60,
+	height: 70
+}
+"#accounts[platform=android]":{
+	top: '65%',
+	left: "28%",
+	backgroundImage: '/common/Settings.png',
+	width: 60,
+	height: 70
+}
+"#trackRides[platform=android]":{
+	top: '65%',
+	right: "28%",
+	backgroundImage: '/common/Track-Rides.png',
+	width: 60,
+	height: 70
+}
+"#payments[platform=android]":{
+	top: '65%',
+	right: "5%",
+	backgroundImage: '/common/Payments.png',
+	width: 60,
+	height: 70
+}
+//ios
+"#contacts[platform=ios]":{
+	top: '65%',
+	left: "6%",
+	backgroundImage: '/common/Contacts.png',
+	width: 60,
+	height: 70
+}
+"#accounts[platform=ios]":{
+	top: '65%',
+	left: "30%",
+	backgroundImage: '/common/Settings.png',
+	width: 60,
+	height: 70
+}
+"#trackRides[platform=ios]":{
+	top: '65%',
+	right: "30%",
+	backgroundImage: '/common/Track-Rides.png',
+	width: 60,
+	height: 70
+}
+"#payments[platform=ios]":{
+	top: '65%',
+	right: "6%",
+	backgroundImage: '/common/Payments.png',
+	width: 60,
+	height: 70
+}
+
+//android
+"#lblContacts[platform=android]":{
+	top: "74%",
+	left: "6%"
+}
+"#lblAccounts[platform=android]":{
+	top: "74%",
+	left: "30%"
+}
+"#trackRides_[platform=android]":{
+	top: "74%",
+	right: "29%"
+}
+"#paymentTab_[platform=android]":{
+	top: "74%",
+	right: "5%"
+}
+
+//ios
+"#lblContacts[platform=ios]":{
+	top: "74%",
+	left: "6%"
+}
+"#lblAccounts[platform=ios]":{
+	top: "74%",
+	left: "29%"
+}
+"#trackRides_[platform=ios]":{
+	top: "74%",
+	right: "28%"
+}
+"#paymentTab_[platform=ios]":{
+	top: "74%",
+	right: "4.5%"
+}
+
+

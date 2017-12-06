@@ -1,0 +1,16 @@
+<Alloy>
+	<!--Android -->
+	<TabGroup id="uRideTabGroupId" onOpen="load" platform="android" class="container" 
+			windowSoftInputMode="Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN" onAndroidback="androidBackEventHandler">
+		<Require id="uRideORqstsTabId" src="uRideOutstandingRqsts" platform="android"/>
+		<Require id="uRideNewRqstTabId" src="uRideNewRqst" platform="android"/>
+		<Require id="uRideHstryTabId" src="uRideHistory" platform="android"/>
+	</TabGroup>
+	
+	<!-- ios -->
+	<TabGroup id="uRideTabGroupId" onOpen="load" platform="ios" title="" tabsBackgroundColor="#000023" barColor="#000023">
+		<Require id="uRideORqstsTabId" src="uRideOutstandingRqsts" platform="ios"/>
+		<Require id="uRideNewRqstTabId" src="uRideNewRqst" platform="ios"/>
+		<Require id="uRideHstryTabId" src="uRideHistory"  platform="ios"/>
+	</TabGroup>
+</Alloy>

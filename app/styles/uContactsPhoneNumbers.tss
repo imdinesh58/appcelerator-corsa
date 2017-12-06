@@ -1,0 +1,134 @@
+"#winContacts":{
+	backgroundColor : '#E3DED6',
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+    titleAttributes:  {
+       color:'white',
+       font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+		}
+    }
+}
+"#add[platform=ios]":{
+	backgroundImage: '/common/invite.png',
+	width: 30,
+	height: 30,
+	right : '13%',
+	top : '5%'
+}
+"#add2[platform=ios]":{
+	backgroundImage: '/common/manual.png',
+	width: 30,
+	height: 30,
+	right : '3%',
+	top : '5%'
+}
+"#add0[platform=ios]":{
+	backgroundImage: '/common/Invite2.png',
+	width: 45,
+	height: 30,
+	right : '3%',
+	top : '5%'
+}
+"#activityIndicator":{
+	color: "#322110",
+	message : 'Loading ...',
+	font:{
+		fontSize : '20dp',
+		fontWeight : 'bold'
+	},
+	left : '0%',
+	top : '40%',
+	width : '100%',
+	textAlign: 'center',
+	height : '10%'
+}
+
+"#tableContacts[platform=android]": {
+	top: '0%',
+	left: '0%',
+	height: '100%', //90
+	width: '100%',
+	scrollable: true,
+	separatorColor : 'white',
+	search : 'searchView',
+	filterAttribute: 'filter' //here is the search filter which
+	//appears in TableViewRow
+}
+"#tableContacts[platform=ios]": {
+	top: '0%',
+	left: '0%',
+	height: '100%', //90
+	width: '100%',
+	scrollable: true,
+	backgroundColor:'#f2efe8',
+	separatorStyle : Titanium.UI.iPhone.TableViewSeparatorStyle.NONE,
+	search : 'searchView',
+	filterAttribute: 'filter' //here is the search filter which
+	//appears in TableViewRow
+}
+
+"#loadmore[platform=android]":{
+	bottom: '0%',
+	right : '0%',
+	height: '8%',
+	width: '100%',
+	textAlign: 'center',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	color : "#001E45",
+	text : "Load More",
+	backgroundColor : "lightgray"
+}
+
+"#loadmore[platform=ios]":{
+	bottom: '0%',
+	right : '0%',
+	height: '10%',
+	width: '100%',
+	textAlign: 'center',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	color : "#001E45",
+	text : "Load More",
+	backgroundColor : "lightgray"
+}
+
+"#Previous[platform=android]":{
+	bottom: '0%',
+	height: '8%',
+	left : '10%',
+	width: '35%',
+	textAlign: 'center',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	color : "#001E45",
+	backgroundColor : "lightgray",
+	borderRadius : 7
+}
+"#Previous[platform=ios]":{
+	bottom: '0%',
+	height: '10%',
+	left : '10%', 
+	width: '35%',
+	textAlign: 'center',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	color : "#001E45",
+	backgroundColor : "lightgray",
+	borderRadius : 7
+}
+

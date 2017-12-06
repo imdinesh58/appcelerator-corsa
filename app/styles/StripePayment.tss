@@ -1,0 +1,189 @@
+"#pay":{
+	backgroundImage : '/icons/ucorsaHome.png',
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+    titleAttributes:  {
+       color:'white',
+       font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+		}
+    }
+}
+"#customview":{
+	backgroundImage : '/icons/ucorsaHome.png',
+	top:"0%",
+    height:"100%",
+    width : '100%'
+}
+"#normalview":{
+	backgroundImage : '/icons/ucorsaHome.png',
+	top:"0%",
+    height:"100%",
+    width : '100%'
+}
+"#paypal":{
+	top: '2%',
+	left: '25%',
+	width : "25%",
+	color : 'white',
+	backgroundColor : "#001E45",
+	borderRadius : 8,
+	height : '8%',
+	font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+	},
+	borderColor : '#001E45'
+}
+"#netbank":{
+	top: '2%',
+	right: '10%',
+	width : "25%",
+	color : 'white',
+	backgroundColor : "#001E45",
+	borderRadius : 8,
+	height : '8%',
+	font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+	},
+	borderColor : '#001E45'
+}
+'#img':{
+	top: '15%',
+	//backgroundImage:'/stripe.png',
+	backgroundImage:'',
+	left:'34%',
+	width: 60,
+	height: 30
+}
+'#img2':{
+	top: '4%',
+	backgroundImage:'/unchecked.png',
+	left:'15%',
+	width: '20dp',
+	height: '20dp'
+}
+'#img3':{
+	top: '4%',
+	backgroundImage:'/unchecked.png',
+	left: '55%',
+	width: '20dp',
+	height: '20dp'
+}
+'#img4':{
+	top: '15%',
+	backgroundImage:'',
+	//backgroundImage:'/us.png',
+	left:'54%',
+	width: 60,
+	height: 30
+}
+
+'#number': {
+	top: '15%',
+	hintText: 'Card Number *',
+	keyboardType:Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	maxLength : 16,
+	left: '10%',
+	width : '80%',
+	returnKeyType : Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn :true
+}
+'#month': {
+	top: '25%',
+	hintText: 'Expiry Month *',
+	keyboardType:Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	maxLength : 2,
+	left: '10%',
+	width : '39%',
+	returnKeyType : Titanium.UI.RETURNKEY_DONE,
+	suppressReturn :true
+}
+'#year[platform=android]': {
+	top: '25%',
+	hintText: 'Expiry Year *',
+	keyboardType:Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	maxLength : 4,
+	right: '10%',
+	width : '39%',	
+	height: '8%',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	hintTextColor: 'white',
+	color: 'white',
+	tintColor: 'white',
+	backgroundColor: '#BEB0A3',
+	borderStyle:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderRadius: 6,
+	returnKeyType : Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn :true
+}
+'#year[platform=ios]': {
+	top: '25%',
+	hintText: 'Expiry Year *',
+	keyboardType:Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	maxLength : 4,
+	right: '10%',
+	width : '39%',	
+	height: '8%',
+	borderColor : '#001E45',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	hintTextColor: '#786658',
+	borderColor : '#001E45',
+	color: '#786658',
+	tintColor: '#786658',
+	backgroundColor: '#786658',
+	borderStyle:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderRadius: 6,
+	returnKeyType : Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn :true
+}
+
+'#cvv': {
+	top: '35%',
+	hintText: 'CVV   (optional)',
+	keyboardType: Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	maxLength : 4,
+	left: '10%',
+	width : '80%',
+	returnKeyType : Titanium.UI.RETURNKEY_DONE,
+	suppressReturn :true
+}
+'#BankName': {
+	top: '15%',
+	hintText: 'Bank Name ',
+	left: '10%',
+	width : '80%'
+}
+'#Banknumber': {
+	top: '25%',
+	hintText: 'Enter a valid Bank Number *',
+	keyboardType: Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	maxLength : 20,
+	left: '10%',
+	width : '80%',
+	returnKeyType : Titanium.UI.RETURNKEY_DONE,
+	suppressReturn :true
+}
+'#Routenumber': {
+	top: '35%',
+	hintText: 'Routing Number *',
+	keyboardType: Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	maxLength : 20,
+	left: '10%',
+	width : '80%',
+	returnKeyType : Titanium.UI.RETURNKEY_DONE,
+	suppressReturn :true
+}
+'#save':{
+	top:'45%'
+}

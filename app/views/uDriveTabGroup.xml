@@ -1,0 +1,15 @@
+<Alloy>
+	<!--Android -->
+	<TabGroup id="uDriveTabGroupId" onOpen="load" platform="android" class="container" 
+		windowSoftInputMode="Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN" onAndroidback="androidBackEventHandler">
+		<Require id="uDriveORqstsTabId" src="uDriveOutstandingRqsts" platform="android"/>
+		<Require id="uDriveNewRqstTabId" src="uDriveNewRqst" platform="android"/>
+		<Require id="uDriveHistoryTabId" src="uDriveHistory" platform="android"/>
+	</TabGroup>
+	<!--ios -->
+	<TabGroup id="uDriveTabGroupId" onOpen="load" platform="ios" title="" tabsBackgroundColor="#000023" barColor="#000023" >
+		<Require id="uDriveORqstsTabId" src="uDriveOutstandingRqsts" platform="ios"/>
+		<Require id="uDriveNewRqstTabId" src="uDriveNewRqst" platform="ios"/>
+		<Require id="uDriveHistoryTabId" src="uDriveHistory" platform="ios"/>
+	</TabGroup>
+</Alloy>

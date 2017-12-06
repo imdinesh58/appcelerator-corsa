@@ -1,0 +1,71 @@
+"#win1":{
+	backgroundImage : '/icons/ucorsaHome.png',
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+    titleAttributes:  {
+       color:'white',
+       font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+		}
+    }
+}
+"#tableview[platform=android]": {
+	top: '8%',
+	left: '0%',
+	height: '80%',
+	width: '100%',
+	scrollable:true,
+	separatorColor:'white'
+}
+"#tableview[platform=ios]": {
+	top: '8%',
+	left: '0%',
+	height: '80%',
+	width: '100%',
+	scrollable:true,
+	backgroundColor:'#f2efe8',
+	// separatorStyle : Titanium.UI.iPhone.TableViewSeparatorStyle.NONE
+	separatorColor:'white'
+}
+"#add__[platform=android]":{
+	backgroundImage: '/common/add.png',
+	width: 35,
+	height: 35,
+	right : '1%',
+	top : '1%'
+}
+"#add[platform=ios]":{
+	backgroundImage: '/common/add.png',
+	width: 30,
+	height: 30,
+	right : '3%',
+	top : '5%'
+}
+ "#nodata" :{
+	text : "No Vehicles found",
+	top : '35%',
+	left : '0%',
+	width : '100%',
+	textAlign : 'center',
+	color : '#001E45',
+	height : '15%',
+	font :{
+		fontSize : '20sp',
+		fontWeight : 'bold'
+	}
+}
+"#activityIndicator":{
+	color: "#001E45",
+	font: {
+		fontSize: "15sp",
+		fontWeight : 'bold'
+	},
+	message: 'Loading Vehicle...',
+	top: "50%",
+	left: "0%",
+	textAlign : 'center',
+	indicatorColor: '#001E45',
+	height: '15%',
+	width: '100%'
+}

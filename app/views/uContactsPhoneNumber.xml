@@ -1,0 +1,8 @@
+<Alloy>
+	<TableViewRow id="cPhoneNumber">
+		<Label id="cImage"></Label>
+		<Label id="cName"></Label>
+		<Label id="cNumber"></Label>
+		<Switch id="cCheckBox"></Switch>
+	</TableViewRow>
+</Alloy>

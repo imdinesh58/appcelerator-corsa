@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="blueTheme" parent="@style/Theme.AppCompat.Translucent">
+    <item name="colorPrimary">#001E45</item>
+    <item name="colorPrimaryDark">#002c66</item>
+    <item name="colorControlNormal">#f2efe8</item>
+    <item name="colorControlActivated">#01DFD7</item>
+    <item name="colorControlHighlight">#002c66</item>
+    <item name="colorSwitchThumbNormal">#74685B</item>
+    <item name="android:colorButtonNormal">#001E45</item>
+    <item name="android:colorEdgeEffect">#001E45</item>
+    <item name="android:textColorPrimary">#f2efe8</item>
+    <item name="android:textColorHint">#001E45</item>
+    <item name="android:navigationBarColor">#001E45</item>
+</style>
+</resources>

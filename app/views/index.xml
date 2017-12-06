@@ -1,0 +1,18 @@
+<Alloy>
+	<!--ANDROID -->
+	<Window  id="indexWinId" onOpen="load" platform="android" onAndroid:back="showDialog">
+		<Require src="index_common" id="index_common"/>
+		<AlertDialog id="dialog" onClick="doClick" title="Exit App?" cancel="1">
+			<ButtonNames>
+				<ButtonName>Yes</ButtonName>
+				<ButtonName>No</ButtonName>
+			</ButtonNames>
+		</AlertDialog>
+	</Window>
+	<!--IOS -->
+	<NavigationWindow id="indexWinId" platform="ios">
+		<Window  id="indexWinId" onOpen="load" platform="ios" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+			<Require src="index_common" id="index_common"/>
+		</Window>
+	</NavigationWindow>
+</Alloy>

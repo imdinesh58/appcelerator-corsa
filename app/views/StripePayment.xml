@@ -1,0 +1,45 @@
+<Alloy>
+		<!-- Android -->
+	<Window id="pay" onOpen="load" platform="android" onAndroid:back="closeWindow" windowSoftInputMode="Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN">
+		<ScrollView width="100%" height="100%">
+		<Label id="paypal" platform="android" onSingletap="Select_card"></Label>
+		<Label id="netbank" platform="android" onSingletap="Select_bank">Banking</Label>
+		<TextField id = "number" platform="android" class="commontext"></TextField>
+		<TextField id = "month" platform="android" class="commontext" onBlur="check"></TextField>
+		<TextField id = "year" platform="android"></TextField>
+		<TextField id = "cvv" platform="android" class="commontext"></TextField>
+		<ImageView id="img" platform="android" ></ImageView>
+		<ImageView id="img2" platform="android" onSingletap="Select_card"></ImageView>
+		<ImageView id="img3" platform="android" onSingletap="Select_bank"></ImageView>
+		<ImageView id="img4" platform="android"></ImageView>
+		<TextField id = "BankName" platform="android" class="commontext"></TextField>
+		<TextField id = "Banknumber" platform="android" class="commontext"></TextField>
+		<TextField id = "Routenumber" platform="android" class="commontext"></TextField>
+		<Label id="save" class="commonlabel" onSingletap="Validation" platform="android">Submit</Label>
+		</ScrollView>
+	</Window>
+		<!-- Ios -->
+		<NavigationWindow id="pay" platform="ios">
+		<Window id="pay1" onOpen="load" platform="ios" class="container" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK" title="SignUp!">
+		<LeftNavButton>
+			 <ImageView  class="commonBack" onClick="closeWindow" platform="ios"></ImageView>
+		</LeftNavButton>
+		<ScrollView width="100%" height="100%">
+		<Label id="paypal" platform="ios" onSingletap="Select_card"></Label>
+		<Label id="netbank" platform="ios" onSingletap="Select_bank">Banking</Label>
+		<TextField  id = "number" platform="ios" class="commontext"></TextField>
+		<TextField  id = "month" platform="ios" class="commontext" onBlur="check"></TextField>
+		<TextField  id = "year" platform="ios"></TextField>
+		<TextField  id = "cvv" platform="ios" class="commontext"></TextField>
+		<ImageView id="img" platform="ios"></ImageView>
+		<ImageView id="img2" platform="ios" onSingletap="Select_card"></ImageView>
+		<ImageView id="img3" platform="ios" onSingletap="Select_bank"></ImageView>
+		<ImageView id="img4" platform="ios"></ImageView>
+		<TextField id = "BankName" platform="ios" class="commontext"></TextField>
+		<TextField  id = "Banknumber" platform="ios" class="commontext"></TextField>
+		<TextField  id = "Routenumber" platform="ios" class="commontext"></TextField>
+		<Label id="save" class="commonlabel" onSingletap="Validation" platform="ios">Submit</Label>
+		</ScrollView>
+	</Window>
+		</NavigationWindow>
+</Alloy>

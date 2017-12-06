@@ -1,0 +1,19 @@
+<Alloy>
+	<!-- Android -->
+	<Window id="showRide" onOpen="load" platform="android" onAndroid:back="closeWindow">
+		<View id="mapView" height="100%" width="100%" top="0%" left="0%" platform="android">
+			<Module id="map1" module="ti.map" method="createView" platform="android"></Module>
+		</View>
+	</Window>
+	<!-- ios -->
+	<NavigationWindow id="showRide" platform="ios">
+	<Window id="showRideWin" onOpen="load" platform="ios" title="Track Rides" class="container" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+		<LeftNavButton>
+			 <ImageView  class="commonBack" onClick="closeWindow" platform="ios"></ImageView>
+		</LeftNavButton>
+		<View id="mapView" height="100%" width="100%" top="0%" platform="ios">
+			<Module id="map1" module="ti.map" method="createView" platform="ios"></Module>
+		</View>
+	</Window>
+	</NavigationWindow>
+</Alloy>

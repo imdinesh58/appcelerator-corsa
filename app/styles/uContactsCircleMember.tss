@@ -1,0 +1,39 @@
+
+"#circleMember" : {
+	height: 40,
+	backgroundColor: '#E3DED6'
+}
+
+"#memberName" : {
+	left : '20%',
+	height: 'auto',
+	width: 'auto',
+	top : '10%',
+	textAlign : 'left',
+	color : '#786658',
+	font : {
+		fontSize : '14sp',
+		fontWeight : 'bold'
+	}
+}
+
+"#memberNumber" : {
+	left : '20%',
+	height: 'auto',
+	width: 'auto',
+	bottom : '5%',
+	textAlign : 'left',
+	color : '#786658',
+	font : {
+		fontSize : '14sp',
+		fontWeight : 'bold'
+	}
+}
+
+"#delMember" : {
+	objName: 'delMember',
+	right : '1%',
+	width : 30,
+	height : 30,
+	backgroundImage : '/images/delete.png'
+}

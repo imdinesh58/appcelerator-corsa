@@ -1,0 +1,21 @@
+<Alloy>
+	<!-- Android -->
+	<Window id="win1" onOpen="load" platform="android" onAndroid:back="WindowClose">
+		<TextField  id = "oldpassword" platform="android" class="commontext"></TextField>
+		<TextField  id = "newpassword" platform="android" class="commontext"></TextField>
+		<TextField  id = "password" platform="android" class="commontext"></TextField>
+	    <Label id="update" class="commonlabel" platform="android" onClick="save">Change Password</Label>  
+			</Window>
+	<!-- ios -->
+	<NavigationWindow id="win1" platform="ios">
+	<Window id="win2" onOpen="load" platform="ios" class="container" title="Change Password" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+		<LeftNavButton>
+			 <ImageView  class="commonBack" onClick="WindowClose" platform="ios"></ImageView>
+		</LeftNavButton>
+		<TextField  id = "oldpassword" platform="ios" class="commontext"></TextField>
+		<TextField  id = "newpassword" platform="ios" class="commontext"></TextField>
+		<TextField  id = "password" platform="ios" class="commontext"></TextField>
+	    <Label id="update" class="commonlabel" platform="ios" onClick="save">Change Password</Label>
+	</Window>
+	</NavigationWindow>
+</Alloy>

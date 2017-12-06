@@ -1,0 +1,19 @@
+<Alloy>
+	<!--android -->
+	<Window id="forgotpasswin" onOpen="load" platform="android" onAndroid:back="closeWindow">
+		<ActionBar title="Forgot Password?" platform="android"></ActionBar>	
+		<TextField id="mail" class="commontext" platform="android"></TextField>
+		<Label id ="send" class="commonlabel" onClick="Validate" platform="android">Reset Password</Label>
+	</Window>
+	<!--ios -->
+	<NavigationWindow id="forgotpasswin" platform="ios">
+		<Window id="forgotpasswin1" onOpen="load" platform="ios" class="container" title="Forgot Password?" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+			<LeftNavButton platform="ios">
+			 <ImageView  class="commonBack" onClick="closeWindow" platform="ios"></ImageView>
+		</LeftNavButton>
+		
+		<TextField id="mail" class="commontext" platform="ios"></TextField>
+		<Label id ="send" class="commonlabel" onClick="Validate" platform="ios">Reset Password</Label>
+	</Window>
+	</NavigationWindow>
+</Alloy>

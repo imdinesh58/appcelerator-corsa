@@ -1,0 +1,36 @@
+"#row":{
+	height: 70,
+	backgroundColor: '#E3DED6'
+}
+
+"#message":{
+	top: '15%',
+	height: 'auto',
+	width: 'auto',
+	color: "#786658",
+	backgroundColor: 'white',
+	borderColor: 'white',
+	font: {
+		fontSize: "16dp"
+	}
+}
+
+"#messageDate":{
+	botton: '10%',
+	height: 'auto',
+	width: 'auto',
+	color: "#786658",
+	backgroundColor: 'white',
+	borderColor: 'white',
+	font: {
+		fontSize: "10dp",
+		fontWeight: 'italics'
+	}
+}
+
+
+"#img":{
+	width: 35,
+	height: 35,
+	backgroundImage: '/icons/contact_reverse.png'
+}

@@ -1,0 +1,14 @@
+<Alloy>
+	<!-- Android -->
+	<Window id="home" platform="android" onOpen="loadgoogleplus" onAndroid:back="CLOSE">
+		<ActionBar id ="actionbar" title="Google+ Login" platform="android"></ActionBar>
+	</Window>
+	<!-- ios -->
+	<NavigationWindow id="home1" platform="ios">
+		<Window id="home" platform="ios" onOpen="loadgoogleplus"  platform="ios" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK" class="container" title="Google+ Login">
+			<LeftNavButton>
+				<ImageView  class="commonBack" onClick="CLOSE" platform="ios"></ImageView>
+			</LeftNavButton>
+		</Window>
+	</NavigationWindow>
+</Alloy>

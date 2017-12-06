@@ -1,0 +1,37 @@
+
+"#cView" : {
+	height : '50dp',
+	width : Ti.UI.SIZE,
+	backgroundColor : '#322110',
+}
+
+"#cName1[platform=android]" : {
+	height : '30dp',
+	width : '30dp',
+	top : '18%',
+	left : '5%',
+	borderRadius : 30,
+	color : 'white',
+	backgroundColor : '#BEB0A3',
+	textAlign : 'center',
+	borderStyle : Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	font : {
+		fontSize : '20sp',
+		fontWeight : 'bold'
+	}
+}
+"#cName1[platform=ios]" : {
+	height : '30dp',
+	width : '30dp',
+	top : '18%',
+	left : '4%',
+	borderRadius : 10,
+	color : 'white',
+	backgroundColor : '#BEB0A3',
+	textAlign : 'center',
+	borderStyle : Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	font : {
+		fontSize : '20sp',
+		fontWeight : 'bold'
+	}
+}

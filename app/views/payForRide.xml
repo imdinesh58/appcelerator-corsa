@@ -1,0 +1,16 @@
+<Alloy>
+	<!-- Android -->
+	<Window id="pay" onOpen="load" platform="android" onAndroid:back="closeWindow">
+		<Label id="amount"  platform="android"></Label>
+		<TextField id = "mytips" class="commontext"></TextField>
+		<Label id="save" class="commonlabel" platform="android" onClick="submit">Submit</Label>
+	</Window>
+	<!-- Ios -->
+	<NavigationWindow id="pay" platform="ios">
+		<Window id="pay1" onOpen="load" platform="ios" class="container" title="Payment Receipt" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+			<Label id="amount" platform="ios"></Label>
+			<TextField id = "mytips" class="commontext"></TextField>
+			<Label id="save" class="commonlabel" platform="ios" onClick="submit">Submit</Label>
+		</Window>
+	</NavigationWindow>
+</Alloy>

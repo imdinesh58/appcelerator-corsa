@@ -1,0 +1,39 @@
+"#win1":{
+	backgroundImage : '/icons/ucorsaHome.png',
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+    titleAttributes:  {
+       color:'white',
+       font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+		}
+    }
+}
+'#address1': {
+	top: '10%',
+	hintText: 'Address line1 *'
+}
+'#address2': {
+	top: '20%',
+	hintText: 'Address line2'
+}
+'#city': {
+	top: '30%',
+	hintText: 'City *'
+}
+'#state': {
+	top: '40%',
+	hintText: 'State *'
+}
+'#zipcode': {
+	top: '50%',
+	hintText: 'Zip code *',
+	keyboardType:Titanium.UI.KEYBOARD_PHONE_PAD,
+	maxLength: 10
+}
+
+'#add': {
+	top: '60%',
+	width: '80%'
+}

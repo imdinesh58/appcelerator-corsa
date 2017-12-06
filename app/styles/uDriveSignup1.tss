@@ -1,0 +1,138 @@
+"#uDriveSignupWin":{
+	backgroundImage : '/icons/ucorsaHome.png',
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+    titleAttributes:  {
+       color:'white',
+       font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+		}
+    }
+}
+"#add":{
+	backgroundImage: '/images/add.png',
+	width: 30,
+	height: 30,
+	right : '3%',
+	top : '5%'
+}
+
+"#done":{
+	top: '3%',
+	text : 'Done',
+	left: '1%',
+	width: '20%',
+	height: '8%',
+	color: 'white',
+	font: {
+		fontSize: "15sp",
+		fontWeight: 'bold'
+	}
+}
+// '#title': {
+	// top: '10%',
+	// left: '10%',
+	// hintText: 'Enter event description'
+// }
+//
+'#lbl':{
+	top: '20%',
+	width : '100%',
+	left : '0%',
+	color: '#322110',
+	textAlign : 'center',
+	font: {
+		fontSize: '20sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	height : "8%"
+}
+'.custom_':{
+	top: '30%',
+	width : '38%',
+	color: 'white',
+	textAlign : 'center',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	backgroundColor : '#BEB0A3',
+	borderRadius : 6,
+	height : "8%",
+	zIndex : -1
+}
+
+"#startdate": {
+	left : '10%'
+}
+"#enddate": {
+	left : '10%'
+}
+//
+'#lbl1':{
+	top: '40%',
+	width : '100%',
+	left : '0%',
+	color: '#322110',
+	textAlign : 'center',
+	font: {
+		fontSize: '20sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	height : "8%"
+}
+'.custom':{
+	top: '50%',
+	width : '38%',
+	color: 'white',
+	textAlign : 'center',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	backgroundColor : '#BEB0A3',
+	borderRadius : 6,
+	height : "8%",
+	zIndex : -1
+}
+
+"#starttime": {
+	right : '10%'
+}
+// '#lbl2':{
+	// top: '60%',
+	// width : '100%',
+	// left : '0%',
+	// color: '#322110',
+	// textAlign : 'center',
+	// font: {
+		// fontSize: '20sp',
+		// fontFamily: 'Fira Sans',
+		// fontWeight: 'bold'
+	// },
+	// height : "8%"
+// }
+'.custom2':{
+	top: '70%',
+	width : '38%',
+	color: 'white',
+	textAlign : 'center',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	backgroundColor : '#BEB0A3',
+	borderRadius : 6,
+	height : "8%",
+	zIndex : -1
+}
+
+"#endtime": {
+	right : '10%'
+}

@@ -1,0 +1,39 @@
+"#pay":{
+	backgroundImage : '/icons/ucorsaHome.png',
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+    titleAttributes:  {
+       color:'white',
+       font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+		}
+    }
+}
+"#amount":{
+	top: '10%',
+	left : "0%",
+	width: '100%',
+	textAlign : 'center',
+	height : '8%',
+	color: '#786658', // Yellow ffe74d   // off white f2efe8
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans'
+	}
+}
+
+'#mytips': {
+	top: '20%',
+	hintText: 'Addt’l. $',
+	maxLength: 50,
+	returnKeyType : Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn :true,
+	left : "30%",
+	width : "40%"
+}
+
+'#save':{
+	top:'35%'
+}
+

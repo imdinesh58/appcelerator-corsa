@@ -1,0 +1,59 @@
+<Alloy>
+	<!-- Android -->
+	<Window id="pay" onOpen="load" platform="android" onAndroid:back="closeWindow" windowSoftInputMode="Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN">
+		<ScrollView width="100%" height="100%">
+			<Label id="paypal"  onSingletap="Select_card"></Label>
+			<Label id="netbank"  onSingletap="Select_bank">Banking</Label>
+			<TextField id = "number"  class="commontext" onSingletap="focus"></TextField>
+			<TextField id = "month"  class="commontext" onBlur="check"></TextField>
+			<TextField id = "year" ></TextField>
+			<TextField id = "cvv"  class="commontext"></TextField>
+			<ImageView id="img"  ></ImageView>
+			<ImageView id="img2"  onSingletap="Select_card"></ImageView>
+			<ImageView id="img3"  onSingletap="Select_bank"></ImageView>
+			<ImageView id="img4" ></ImageView>
+			<TextField id = "BankName"  class="commontext"></TextField>
+			<TextField id = "Banknumber"  class="commontext"></TextField>
+			<TextField id = "Routenumber"  class="commontext"></TextField>
+			<!--New-->
+			<TextField id = "city"></TextField>
+			<TextField id = "line1" ></TextField>
+			<TextField id = "postal_code"></TextField>
+			<TextField id = "state"></TextField>
+			<TextField id = "dob" onChange="ChangeDob"></TextField>
+			<TextField id = "ssn"></TextField>
+			<!--New-->
+			<Label id="save" class="commonlabel" onClick="Validation" >Save</Label>
+		</ScrollView>
+	</Window>
+	<!-- Ios -->
+	<NavigationWindow id="pay" platform="ios">
+		<Window id="pay" onOpen="load" platform="ios" class="container" title="Add Details" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+			<LeftNavButton>
+				<ImageView  class="commonBack" onClick="closeWindow" platform="ios"></ImageView>
+			</LeftNavButton>
+			<ScrollView width="100%" height="100%">
+				<Label id="paypal"  onSingletap="Select_card"></Label>
+				<Label id="netbank"  onSingletap="Select_bank">Banking</Label>
+				<TextField  id = "number"  class="commontext" onSingletap="focus"></TextField>
+				<TextField  id = "month"  class="commontext" onBlur="check"></TextField>
+				<TextField  id = "year" ></TextField>
+				<TextField  id = "cvv"  class="commontext"></TextField>
+				<ImageView id="img" ></ImageView>
+				<ImageView id="img2"  onSingletap="Select_card"></ImageView>
+				<ImageView id="img3"  onSingletap="Select_bank"></ImageView>
+				<ImageView id="img4" ></ImageView>
+				<TextField id = "BankName"  class="commontext"></TextField>
+				<TextField  id = "Banknumber"  class="commontext"></TextField>
+				<TextField  id = "Routenumber"  class="commontext"></TextField>
+				<TextField id = "city"></TextField>
+				<TextField id = "line1" ></TextField>
+				<TextField id = "postal_code"></TextField>
+				<TextField id = "state"></TextField>
+				<TextField id = "dob" onChange="ChangeDob"></TextField>
+				<TextField id = "ssn"></TextField>
+				<Label id="save" class="commonlabel" onClick="Validation" >Save</Label>
+			</ScrollView>
+		</Window>
+	</NavigationWindow>
+</Alloy>

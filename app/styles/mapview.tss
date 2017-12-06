@@ -1,0 +1,184 @@
+"#ridefrom":{
+	backgroundImage: '/icons/ucorsaHome.png',
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+	titleAttributes:  {
+		color: 'white',
+		font: {
+			fontSize: '15sp',
+			fontWeight: 'bold'
+		}
+	}
+}
+"#done":{
+	top: '3%',
+	text: 'DONE',
+	left: '1%',
+	width: '20%',
+	height: '8%',
+	color: 'white',
+	font: {
+		fontSize: "15sp",
+		fontWeight: 'bold'
+	}
+}
+
+"#map1[platform=android]": {
+	region: {
+		// latitude: Alloy.Globals.LATITUDE,
+		// longitude:  Alloy.Globals.LONGITUDE,
+		latitudeDelta:  0.001, //0.003
+		longitudeDelta: 0.001 //0.003
+	},
+	top: '0%',
+	height: '100%',
+	left: '0%',
+	width: '100%',
+	regionFit: true,
+	animate: true,
+	userLocation: true
+}
+
+"#map1[platform=ios]": {
+	region: {
+	    latitude: Alloy.Globals.LATITUDE,
+		longitude:  Alloy.Globals.LONGITUDE,
+		latitudeDelta:  0.01,
+		longitudeDelta: 0.01
+	},
+	top: '0%',
+	height: '100%',
+	left: '0%',
+	width: '100%',
+	regionFit: true,
+	animate: true,
+	userLocation: true
+}
+
+".common_text":{
+	width: '70%',
+	left: '10%',
+	height: '8%',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'light'
+	},
+	hintTextColor: 'white',
+	color: 'white',
+	tintColor: 'white',
+	//backgroundColor: '#cccccc',
+	backgroundColor: '#BEB0A3',
+	borderStyle:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderRadius: 6,
+	borderColor: '#001E45'
+}
+
+".common_text_":{
+	width: '70%',
+	left: '10%',
+	height: '8%',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'light'
+	},
+	hintTextColor: '#786658',
+	color: '#786658',
+	tintColor: '#786658',
+	backgroundColor: '#786658',
+	borderStyle:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderRadius: 6,
+	borderColor: '#001E45',
+	keyboardAppearance: Titanium.UI.KEYBOARD_APPEARANCE_DARK
+}
+
+"#txtrideFrom":{
+	top: '2%',
+	hintText: 'Search your Location A or hold map'
+}
+
+"#swap[platform=android]":{
+	backgroundImage: '/icons/swap.png',
+	top: '7.5%',
+	width: 30,
+	height: 30,
+	right: '6%'
+}
+"#swap[platform=ios]":{
+	backgroundImage: '/icons/swap.png',
+	top: '7%',
+	width: 30,
+	height: 30,
+	right: '6%'
+}
+"#txtrideTo":{
+	top: '12%',
+	hintText: 'Search your Location B or hold map'
+}
+
+"#clear":{
+	bottom: '40%',
+	left: '1%',
+	width: '15%',
+	height: '6%',
+	color: 'white',
+	textAlign: 'center',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	backgroundColor: '#786658',
+	borderRadius: 2,
+	text: 'Clear'
+}
+
+"#container":{
+	layout: 'vertical',
+	height: '55%',
+	top: '22%',
+	font: {
+		fontSize: '12sp'
+	},
+	color: '#001E45',
+	opacity : 1,
+	zindex : 20
+}
+
+"#autocomplete_table":{
+	height: '15%',
+	width: '90%',
+	scrollable: true,
+	separatorColor: 'black',
+	top: '0%',
+	font: {
+		fontSize: '12sp'
+	},
+	color: '#001E45',
+	left: '5%'
+}
+"#container2":{
+	layout: 'vertical',
+	height: '20%',
+	top: '22%',
+	font: {
+		fontSize: '12sp'
+	},
+	color: '#001E45',
+	opacity : 1,
+	zindex : 20
+}
+
+"#autocomplete_table2":{
+	height: '15%',
+	width: '90%',
+	scrollable: true,
+	separatorColor: 'black',
+	top: '0%',
+	font: {
+		fontSize: '12sp'
+	},
+	color: '#001E45',
+	left: '5%'
+}

@@ -1,0 +1,19 @@
+<Alloy>
+	<!-- Android -->
+	<Tab title="Payments History" platform="android">
+		<Window id="win" platform="android" onOpen="load" onAndroid:back="closeWindow">
+			<TableView id="tableview" platform="android"></TableView>
+			<Label id="nodata" platform="android">No Payment History Available</Label>
+		</Window>
+	</Tab>
+	<!-- IOS -->
+	<Tab title="Payments History" platform="ios" icon="/icons/payment3.png">
+		<Window id="win" platform="ios" onOpen="load" title="Payments" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK" fullscreen="false">
+			<LeftNavButton>
+				<ImageView  class="commonBack" onClick="closeWindow" platform="ios"></ImageView>
+			</LeftNavButton>
+			<TableView id="tableview" platform="ios"></TableView>
+			<Label id="nodata" platform="ios">No Payment History Available</Label>
+		</Window>
+	</Tab>
+</Alloy>

@@ -1,0 +1,13 @@
+<Alloy>
+	<!--Android -->
+	<TabGroup id="uPaymentTabGroupId" onOpen="load" class="container" platform="android" 
+		windowSoftInputMode="Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN" onAndroidback="androidBackEventHandler">
+		<Require id="uPymtCurrentTabId" src="uPaymentCurrent" platform="android"/>
+		<Require id="uPymtHistoryTabId" src="uPaymentHistory" platform="android"/>
+	</TabGroup>
+	<!--ios -->
+	<TabGroup id="uPaymentTabGroupId" onOpen="load" platform="ios" tabsBackgroundColor="#000023" barColor="#000023">
+		<Require id="uPymtCurrentTabId" src="uPaymentCurrent" platform="ios"/>
+		<Require id="uPymtHistoryTabId" src="uPaymentHistory" platform="ios"/>
+	</TabGroup>
+</Alloy>

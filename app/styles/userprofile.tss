@@ -1,0 +1,129 @@
+"#win1":{
+	backgroundImage : '/icons/ucorsaHome.png',
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+    titleAttributes:  {
+       color:'white',
+       font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+		}
+    }
+}
+"#nodata" :{
+	text : "No Address found",
+	top : '60%',
+	left : '0%',
+	width : '100%',
+	textAlign : 'center',
+	color : '#001E45',
+	height : '15%',
+	font :{
+		fontSize : '20sp',
+		fontWeight : 'bold'
+	}
+}
+
+"#edit[platform=android]":{
+	backgroundImage: '/icons/edit.png',
+	top: "1%",
+	width: "11%",
+	height: "7%",
+	right: '15%'
+}
+"#addImg[platform=ios]":{
+	backgroundImage: '/common/add.png',
+	width: 30,
+	height: 30,
+	right : '5%',
+	top : '1%'
+}
+"#addBtn[platform=android]":{
+	backgroundImage: '/common/add.png',
+	width: 35,
+	height: 35,
+	right : '5%',
+	top : '1%'
+}
+"#addLbl[platform=ios]":{
+	width: "20%",
+	height: "auto",
+	right : '12%',
+	top : '2.2%',
+	font: {
+		fontSize: '12sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	color : "#BEB0A3"
+}
+"#edit[platform=ios]":{
+	backgroundImage: '/icons/edit.png',
+	top: "5%",
+	width: 29,
+	height: 29,
+	right : '13%',
+	top : '5%'
+}
+"#add_[platform=ios]":{
+	backgroundImage: '/icons/addd.png',
+	top: "0.5%",
+    width: 25,
+	height: 25,
+	right: '5%'
+}
+"#add_[platform=android]":{
+	backgroundImage: '/icons/addd.png',
+	top: "0.5%",
+    width: 25,
+	height: 25,
+	right: '5%'
+}
+
+'#firstname[platform=android]': {
+	top: '10%',
+	hintText: 'Name',
+	softKeyboardOnFocus : Titanium.UI.Android.SOFT_KEYBOARD_SHOW_ON_FOCUS
+}
+'#firstname[platform=ios]': {
+	top: '10%',
+	hintText: 'Name'
+}
+
+'#email': {
+	top: '19%',
+	hintText: 'E-mail',
+	keyboardType:Titanium.UI.KEYBOARD_PHONE_EMAIL
+}
+'#phone': {
+	top: '28%',
+	hintText: 'Phone number',
+	keyboardType:Titanium.UI.KEYBOARD_PHONE_PAD,
+	maxLength: 10,
+	color: 'red',
+}
+"#update":{
+	top : '37%',
+	width : '80%',
+	left : '10%'
+}
+
+"#tableview[platform=ios]": {
+	top: '50%',
+	left: '0%',
+	height: '40%',
+	width: '100%',
+	scrollable:true,
+	separatorColor:'white',
+	backgroundColor : '#F2EFE8'
+	// separatorStyle : Titanium.UI.iPhone.TableViewSeparatorStyle.NONE
+}
+
+"#tableview[platform=android]": {
+	top: '50%',
+	left: '0%',
+	height: '40%',
+	width: '100%',
+	scrollable:true,
+	separatorColor:'white'
+}

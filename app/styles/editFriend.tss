@@ -1,0 +1,141 @@
+"#edit":{
+	backgroundImage : '/icons/ucorsaHome.png',
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+    titleAttributes:  {
+       color:'white',
+       font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+		}
+    }
+}
+'#IMG[platform=android]':{
+	top: '1%',
+	left: "44%",
+	backgroundImage: '/icons/friends_edit2.png',
+	width: 50,
+	height: 40
+}
+'#IMG[platform=ios]':{
+	top: '1%',
+	left: "42%",
+	backgroundImage: '/icons/friends_edit2.png',
+	width: 50,
+	height: 40
+}
+"#photo[platform=android]":{
+	top: '9.5%',
+	left: '25%',
+	width: 190,
+	height: 190,
+	color: 'white',
+	backgroundColor: '#BEB0A3',
+	borderRadius: 140,
+	textAlign: 'center',
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	font: {
+		fontSize: '80sp',
+		fontWeight: 'bold'
+	},
+	borderColor :'#BEB0A3'
+}
+"#photo[platform=ios]":{
+	top: '12%',
+	left: '27%',
+	width: 140,
+	height: 140,
+	color: 'white',
+	backgroundColor: '#BEB0A3',
+	borderRadius: 65,
+	textAlign: 'center',
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	font: {
+		fontSize: '80sp',
+		fontWeight: 'bold'
+	},
+	borderColor :'#BEB0A3'
+}
+
+'.customLabel[platform=ios]':{
+	left: '30%',
+	width: '70%',
+	height: '10%',
+	color: '#786658',
+	textAlign: 'left',
+	font:{
+		fontSize : '15sp',
+		fontWeight : 'light'
+	}
+}
+'.customLabel[platform=android]':{
+	left: '30%',
+	width: '70%',
+	height: '10%',
+	color: '#786658',
+	textAlign: 'left',
+	font:{
+		fontSize : '20sp',
+		fontWeight : 'light'
+	}
+}
+
+'#name[platform=ios]':{
+	top : '45%',
+	left: '0%',
+	width: '100%',
+	height: '10%',
+	color: '#786658',
+	textAlign: 'center',
+	font:{
+		fontSize : '25sp',
+		fontWeight : 'bold'
+	}
+}
+'#name[platform=android]':{
+	top : '45%',
+	left: '0%',
+	width: '100%',
+	height: '10%',
+	color: '#786658',
+	textAlign: 'center',
+	font:{
+		fontSize : '35sp',
+		fontWeight : 'bold'
+	}
+}
+
+"#phone":{
+	top : '60%'
+}
+"#email":{
+	top : '70%'
+}
+'#img2[platform=android]':{
+	top: '60%',
+	left: "10%",
+	backgroundImage: '/icons/phone.png',
+	width: 80,
+	height: 70
+}
+'#img3[platform=android]':{
+	top: '71%',
+	left: "13%",
+	backgroundImage: '/icons/invite.png',
+	width: 50,
+	height: 50
+}
+'#img2[platform=ios]':{
+	top: '58%',
+	left: "10%",
+	backgroundImage: '/icons/phone.png',
+	width: 80,
+	height: 70
+}
+'#img3[platform=ios]':{
+	top: '71%',
+	left: "13%",
+	backgroundImage: '/icons/invite.png',
+	width: 50,
+	height: 50
+}

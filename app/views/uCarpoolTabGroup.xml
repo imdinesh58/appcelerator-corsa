@@ -1,0 +1,15 @@
+<Alloy>
+	<!--Android -->
+	<TabGroup id="uCarpoolTabGroupId" onOpen="load" platform="android" class="container" 
+		windowSoftInputMode="Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN" onAndroidback="androidBackEventHandler">
+		<Require id="uCarpoolORqstsTabId" src="uCarpoolOutstandingRqsts" platform="android"/>
+		<Require id="uCarpoolNewRqstTabId" src="uCarpoolNewRqst" platform="android"/>
+		<Require id="uCarpoolHistoryTabId" src="uCarpoolHistory" platform="android"/>
+	</TabGroup>
+	<!--ios -->
+	<TabGroup id="uCarpoolTabGroupId" onOpen="load" platform="ios" title="" tabsBackgroundColor="#000023"  barColor="#000023">
+		<Require id="uCarpoolORqstsTabId" src="uCarpoolOutstandingRqsts"  platform="ios"/>
+		<Require id="uCarpoolNewRqstTabId" src="uCarpoolNewRqst"  platform="ios"/>
+		<Require id="uCarpoolHistoryTabId" src="uCarpoolHistory" platform="ios"/>
+	</TabGroup>
+</Alloy>

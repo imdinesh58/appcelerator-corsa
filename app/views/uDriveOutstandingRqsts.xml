@@ -1,0 +1,22 @@
+<Alloy>
+	<!-- Android -->
+	<Tab id="OR" title="DRIVE REQUESTS" platform="android">
+		<Window id="win" platform="android" onOpen="load" class="container" onAndroid:back="closeWindow">
+			<TableView id="tableview" onClick="onClick" platform="android"></TableView>
+			<Label id="nodata" platform="android">No Outstanding requests found</Label>	
+			<ActivityIndicator id="activityIndicator" platform="android"/>		
+		</Window>
+	</Tab>
+	<!-- ios -->
+	<Tab id="OR" title="DRIVE REQUESTS" platform="ios" icon="/images/ride_request.png"  platform="ios" backgroundColor="#001E45">
+		<Window id="win" platform="ios" onOpen="load" title="uDrive" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK" class="container">
+			<LeftNavButton>
+				<ImageView  class="commonBack" onClick="closeWindow" platform="ios"></ImageView>
+			</LeftNavButton>
+			<TableView id="tableview" onClick="onClick" platform="ios"></TableView>
+			<Label id="nodata" platform="ios">No Outstanding requests found</Label>
+			<ActivityIndicator id="activityIndicator" platform="ios"/>
+		</Window>
+	</Tab>
+</Alloy>
+

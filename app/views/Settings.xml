@@ -1,0 +1,33 @@
+<Alloy>
+	<!-- Android -->
+	<Window id="win" onOpen="load" platform="android" onAndroid:back="Close">
+		<ImageView id="getcreditCard" onClick="getcreditCard"></ImageView>
+		<Label id="lblCreditCard" onClick="getcreditCard">Add Credit Card</Label>
+		<ImageView id="getdebitCard" onClick="getdebitCard"></ImageView>
+		<Label id="lblDebitCard" onClick="getdebitCard">Add Bank</Label>
+		<ImageView id="getSecurity" onClick="getSecurity"></ImageView>
+		<Label id="lblSecurity" onClick="getSecurity">Change Password</Label>
+		<ImageView id="getUser" onClick="getUser"></ImageView>
+		<Label id="lblUser" onClick="getUser">Add Address</Label>
+		<ImageView id="getVehicle" onClick="getVehicle"></ImageView>
+		<Label id="lblVehicle" onClick="getVehicle">Add Vehicles</Label>
+	</Window>
+	<!-- IOS -->
+	<NavigationWindow id="win" platform="ios">
+		<Window id="win1" onOpen="load" platform="ios" class="container" fullscreen="false" title="Settings" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+			<LeftNavButtons>
+				<ImageView class="commonBack" platform="ios" onClick="Close"></ImageView>
+			</LeftNavButtons>
+			<ImageView id="getcreditCard" onClick="getcreditCard"></ImageView>
+			<Label id="lblCreditCard" onClick="getcreditCard">Add Credit Card</Label>
+			<ImageView id="getdebitCard" onClick="getdebitCard"></ImageView>
+			<Label id="lblDebitCard" onClick="getdebitCard">Add Bank</Label>	
+			<ImageView id="getSecurity" onClick="getSecurity"></ImageView>
+			<Label id="lblSecurity" onClick="getSecurity">Change Password</Label>
+			<ImageView id="getUser" onClick="getUser"></ImageView>
+			<Label id="lblUser" onClick="getUser">Add Address</Label>
+			<ImageView id="getVehicle" onClick="getVehicle"></ImageView>
+			<Label id="lblVehicle" onClick="getVehicle">Add Vehicles</Label>
+		</Window>
+	</NavigationWindow>
+</Alloy>

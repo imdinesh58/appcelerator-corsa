@@ -1,0 +1,7 @@
+<Alloy>
+	<TableViewRow id="circleMember">
+		<Label id="memberName"></Label>
+		<Label id="memberNumber"></Label>
+		<Label id="delMember"></Label>
+	</TableViewRow>
+</Alloy>

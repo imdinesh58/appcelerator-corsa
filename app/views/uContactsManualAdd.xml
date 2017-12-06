@@ -1,0 +1,11 @@
+<Alloy>
+	<Window id="manualAddWin" backgroundColor="transparent">
+		<View id="manualAddView" class="container">
+			<Label id="titleTxtFld">Add Contact Manually</Label>
+			<TextField id="nameTxtFld"></TextField>
+			<TextField id="mobileNumberTxtFld"></TextField>
+			<Label id="doneBtn" onClick="addContact">Done</Label>
+			<Label id="cancelBtn" onClick="cancelAdd">Cancel</Label>
+		</View>
+	</Window>
+</Alloy>

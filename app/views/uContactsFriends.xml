@@ -1,0 +1,18 @@
+<Alloy>
+	<!-- Android -->
+	<Tab id="friendsTabId"  title="friends" platform="android">
+		<Window id="winFriends" onOpen="loadFriends" platform="android" onAndroid:back="closeWindow">
+			<TableView id="tableFriends" searchAsChild="true" platform="android"></TableView>
+		</Window>
+	</Tab>
+	<!-- ios -->
+	<Tab id="friendsTabId"  title="FRIENDS" platform="ios"  icon="/images/contact_reverse2.png">
+		<Window id="winFriends" onOpen="loadFriends" platform="ios" title="uCorsa" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK" class="container">
+			<LeftNavButton>
+				<ImageView  class="commonBack" onClick="closeWindow" platform="ios"></ImageView>
+			</LeftNavButton>
+			<TableView id="tableFriends" searchAsChild="true" platform="ios"></TableView>
+			<ImageView id="IMG" platform="ios"></ImageView>	
+		</Window>
+	</Tab>
+</Alloy>

@@ -1,0 +1,122 @@
+".container" : {
+	backgroundColor : '#F2EFE8',
+	borderColor : '#001E45',
+	borderWidth : 2
+}
+
+"#topLabel" : {
+	top : '0%',
+	left : '0%',
+	width : '100%',
+	height : '10%',
+	textAlign : 'center',
+	color : 'white',
+	backgroundColor : '#001E45',
+	font : {
+		fontSize : '15sp',
+		fontFamily : 'Fira Sans',
+		fontWeight : 'bold'
+	},
+	borderRadius : 1
+}
+
+'#ccNumber': {
+	top : '15%',
+	left : '10%',
+	width : '80%',
+	height : '10%',
+	font : {
+		fontSize : '15sp',
+		fontFamily : 'Fira Sans',
+		fontWeight : 'light'
+	},
+	color : '#786658',
+	tintColor : '#786658',
+	backgroundColor : '#cccccc',
+	borderColor : '#001E45',
+	hintTextColor : '#786658',
+	hintText: 'Card Number *',
+	keyboardType:Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	maxLength : 16,
+	returnKeyType : Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn :true
+}
+
+'#ccExpMonth': {
+	top: '30%',
+	left: '10%',
+	width : '80%',
+	height : '10%',
+	font : {
+		fontSize : '15sp',
+		fontFamily : 'Fira Sans',
+		fontWeight : 'light'
+	},
+	color : '#786658',
+	tintColor : '#786658',
+	backgroundColor : '#cccccc',
+	borderColor : '#001E45',
+	hintTextColor : '#786658',
+	hintText: 'Expiry Month *',
+	keyboardType:Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	maxLength : 2,
+	returnKeyType : Titanium.UI.RETURNKEY_DONE,
+	suppressReturn :true
+}
+'#ccExpYear': {
+	top: '45%',
+	left: '10%',
+	width : '80%',	
+	height : '10%',
+	font : {
+		fontSize : '15sp',
+		fontFamily : 'Fira Sans',
+		fontWeight : 'light'
+	},
+	color : '#786658',
+	tintColor : '#786658',
+	backgroundColor : '#cccccc',
+	borderColor : '#001E45',
+	hintTextColor : '#786658',
+	hintText: 'Expiry Year *',
+	keyboardType:Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	maxLength : 4,
+	returnKeyType : Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn :true
+}
+'#cvv': {
+	top: '60%',
+	left: '10%',
+	width : '80%',
+	height : '10%',
+	font : {
+		fontSize : '15sp',
+		fontFamily : 'Fira Sans',
+		fontWeight : 'light'
+	},
+	color : '#786658',
+	tintColor : '#786658',
+	backgroundColor : '#cccccc',
+	borderColor : '#001E45',
+	hintTextColor : '#786658',
+	hintText: 'CVV *',
+	keyboardType: Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	maxLength : 4,
+	returnKeyType : Titanium.UI.RETURNKEY_DONE,
+	suppressReturn :true
+}
+
+'#cancel':{
+	top: '75%',
+	left: '10%',
+	width: '38%',
+	height: '10%'
+}
+
+'#save':{
+	top: '75%',
+	left: '50%',
+	width: '40%',
+	height: '10%'
+}
+

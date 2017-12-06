@@ -1,0 +1,31 @@
+"#win1":{
+	backgroundImage : '/icons/ucorsaHome.png',
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+    titleAttributes:  {
+       color:'white',
+       font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+		}
+    }
+}
+'#oldpassword': {
+	top: '10%',
+	hintText: 'Old password',
+	passwordMask: true
+}
+'#newpassword': {
+	top: '20%',
+	hintText: 'New password',
+	passwordMask: true
+}
+'#password': {
+	top: '30%',
+	hintText: 'Confirm password',
+	passwordMask: true
+}
+'#update': {
+	top: '40%',
+	width: '80%'
+}

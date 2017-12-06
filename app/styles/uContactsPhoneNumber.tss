@@ -1,0 +1,83 @@
+
+"#cPhoneNumber" : {
+	height : '50dp',
+	width : Ti.UI.SIZE,
+	backgroundColor : '#F2EFE8',
+	borderColor : '#001E45',
+	borderWidth : 2
+}
+
+"#cImage[platform=android]" : {
+	height : '30dp',
+	width : '30dp',
+	top : '12%',
+	left : '5%',
+	borderRadius : 30,
+	color : 'white',
+	backgroundColor : '#BEB0A3',
+	textAlign : 'center',
+	borderStyle : Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	font : {
+		fontSize : '20sp',
+		fontWeight : 'bold'
+	}
+}
+"#cImage[platform=ios]" : {
+	height : '30dp',
+	width : '30dp',
+	top : '12%',
+	left : '4%',
+	borderRadius : 10,
+	color : 'white',
+	backgroundColor : '#BEB0A3',
+	textAlign : 'center',
+	borderStyle : Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	font : {
+		fontSize : '20sp',
+		fontWeight : 'bold'
+	}
+}
+
+"#cName" : {
+	top : '5%',
+	left : '17%',
+	height : 'auto',
+	width : '60%',
+	color : 'black',
+	textAlign : 'left',
+	font : {
+		fontSize : '15sp',
+		fontWeight : 'bold'
+	}
+}
+
+"#cNumber" : {
+	bottom : '10%',
+	left : '17%',
+	height : 'auto',
+	width : '60%',
+	color : 'black',
+	textAlign : 'left',
+	font : {
+		fontSize : '13sp',
+		fontWeight : 'light'
+	}
+}
+
+"#cCheckBox[platform=android]" : {
+	height : '30dp',
+	width : '30dp',
+	right : '5%',
+	borderColor : '#001E45',
+	borderWidth : 2,
+	style: Ti.UI.Android.SWITCH_STYLE_CHECKBOX,
+	value : false
+}
+"#cCheckBox[platform=ios]" : {
+	height : '30dp',
+	width : '30dp',
+	right : '5%',
+	//borderColor : '#001E45',
+	//borderWidth : 2,
+	value : false
+}

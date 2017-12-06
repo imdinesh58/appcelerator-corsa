@@ -1,0 +1,9 @@
+<Alloy>
+	<TableViewRow id="circle">
+		<ImageView id="showMbrs" image="/common/S1.png" ></ImageView>
+		<Label id="circleName"></Label>
+		<ImageView id="addMbr" image="/images/group.png"></ImageView>
+		<ImageView id="updtCircle" image="/images/gro.png"></ImageView>
+		<ImageView id="delCircle" image="/images/delete.png"></ImageView>
+	</TableViewRow>
+</Alloy>

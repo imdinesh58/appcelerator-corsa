@@ -1,0 +1,32 @@
+"#circleMembers":{
+	height: 50,
+	backgroundColor: '#F2EFE8',
+	width: Ti.UI.SIZE
+}
+
+"#memberName":{
+	left: '13%',
+	bottom: '50%',
+	color: '#786658',
+	font: {
+		fontSize: '13sp',
+		fontWeight: 'bold'
+	}
+}
+
+"#phoneNo":{
+	left: '17%',
+	bottom: '5%',
+	color: '#786658',
+	font: {
+		fontSize: '13sp'
+	}
+}
+
+"#delMember":{
+	objName: 'delMember',
+	bottom: '30%',
+	right: '1%',
+	width: '20dp',
+	height: '20dp'
+}

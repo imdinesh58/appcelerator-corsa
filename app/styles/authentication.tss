@@ -1,0 +1,195 @@
+"#win":{
+	backgroundImage: '/icons/ucorsaHome.png',
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+	titleAttributes:  {
+		color: 'white',
+		font: {
+			fontSize: '15sp',
+			fontWeight: 'bold'
+		}
+	}
+}
+"MenuItem": {
+	showAsAction: Ti.Android.SHOW_AS_ACTION_ALWAYS
+},
+"#item": {
+	icon: Ti.Android.R.drawable.ic_media_play
+}
+
+'#Fname[platform=android]': {
+	top: '5%',
+	left: '10%',
+	width: '38%',
+	height: '8%',
+	hintText: 'First Name *',
+	maxLength: 50,
+	returnKeyType: Titanium.UI.RETURNKEY_DONE,
+	suppressReturn: true,
+	font: {
+		fontSize: '15sp',
+		fontWeight: 'bold'
+	},
+	hintTextColor: 'white',
+	color: 'white',
+	tintColor: 'white',
+	backgroundColor: '#BEB0A3',
+	borderStyle:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderRadius: 6
+}
+'#Fname[platform=ios]': {
+	top: '5%',
+	left: '10%',
+	width: '38%',
+	height: '8%',
+	hintText: 'First Name *',
+	maxLength: 50,
+	returnKeyType: Titanium.UI.RETURNKEY_DONE,
+	suppressReturn: true,
+	font: {
+		fontSize: '15sp',
+		fontWeight: 'bold'
+	},
+	hintTextColor: '#786658',
+	color: '#786658',
+	tintColor: '#786658',
+	backgroundColor: '#786658',
+	borderStyle:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderRadius: 6,
+	borderColor: '#001E45',
+	keyboardAppearance: Titanium.UI.KEYBOARD_APPEARANCE_DARK
+}
+'#Lname[platform=android]': {
+	top: '5%',
+	left: "50%",
+	width: '40%',
+	height: '8%',
+	hintText: 'Last Name *',
+	maxLength: 50,
+	returnKeyType: Titanium.UI.RETURNKEY_DONE,
+	suppressReturn: true,
+	font: {
+		fontSize: '15sp',
+		fontWeight: 'bold'
+	},
+	hintTextColor: 'white',
+	color: 'white',
+	tintColor: 'white',
+	backgroundColor: '#BEB0A3',
+	borderStyle:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderRadius: 6
+}
+'#Lname[platform=ios]': {
+	top: '5%',
+	left: "50%",
+	width: '40%',
+	height: '8%',
+	hintText: 'Last Name *',
+	maxLength: 50,
+	returnKeyType: Titanium.UI.RETURNKEY_DONE,
+	suppressReturn: true,
+	font: {
+		fontSize: '15sp',
+		fontWeight: 'bold'
+	},
+	hintTextColor: '#786658',
+	color: '#786658',
+	tintColor: '#786658',
+	backgroundColor: '#786658',
+	borderStyle:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderRadius: 6,
+	borderColor : '#001E45',
+	keyboardAppearance : Titanium.UI.KEYBOARD_APPEARANCE_DARK
+}
+'#phone': {
+	top: '15%',
+	height: '8%',
+	hintText: 'Phone number *',
+	keyboardType:Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	maxLength: 10,
+	returnKeyType: Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn: true
+}
+'#affiliation':{
+	top: '25%',
+	height: '8%',
+	hintText: 'Company (Affiliation) *',
+	keyboardType:Titanium.UI.KEYBOARD_PHONE_EMAIL,
+	maxLength: 50,
+	returnKeyType: Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn: true
+}
+
+'#email': {
+	top: '35%',
+	height: '8%',
+	hintText: 'E-mail *',
+	keyboardType:Titanium.UI.KEYBOARD_PHONE_EMAIL,
+	maxLength: 50,
+	returnKeyType: Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn: true
+}
+
+'#password': {
+	top: '45%',
+	height: '8%',
+	hintText: 'Password *',
+	passwordMask: true,
+	maxLength: 50,
+	returnKeyType: Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn: true
+}
+'#confirmpassword': {
+	top: '55%',
+	height: '8%',
+	hintText: 'Confirm password *',
+	passwordMask: true,
+	maxLength: 50,
+	returnKeyType: Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn: true
+}
+
+'#creditCard[platform=android]':{
+	top: '65%',
+	left: '10%',
+	width: '80%',
+	height: '8%',
+	font: {
+		fontSize: '15sp',
+		fontWeight: 'bold'
+	},
+	textAlign : 'left',
+	hintTextColor: 'white',
+	color: 'white',
+	tintColor: '#786658',
+	backgroundColor: '#BEB0A3',
+	borderRadius: 6,
+}
+'#creditCard[platform=ios]':{
+	top: '65%',
+	left: '10%',
+	width: '80%',
+	height: '8%',
+	font: {
+		fontSize: '15sp',
+		fontWeight: 'bold'
+	},
+	textAlign : 'left',
+	hintTextColor: 'white',
+	color: '#786658',
+	tintColor: '#786658',
+	backgroundColor: 'white',
+	borderRadius: 6,
+	borderColor : "#001E45"
+}
+
+'#save':{
+	top: '75%',
+	left: '10%',
+	width: '80%',
+	font: {
+		fontSize: '20sp',
+		fontWeight: 'bold'
+	},
+}
+

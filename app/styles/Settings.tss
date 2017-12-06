@@ -1,0 +1,128 @@
+"#win":{
+	backgroundImage: '/icons/ucorsaHome.png',
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+	titleAttributes:  {
+		color: 'white',
+		font: {
+			fontSize: '15sp',
+			fontWeight: 'bold'
+		}
+	}
+}
+
+"#lblCreditCard":{
+	top: '15%',
+	left : '10%',
+	width : '80%',
+	height : '10%',
+	color: 'white',
+	textAlign : 'center',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	borderRadius : 6,
+	backgroundColor : '#001E45',
+	zIndex : -1
+}
+"#getcreditCard":{
+	top: '15%',
+	left: "15%",
+	width: 40,
+	height: 40,
+	////backgroundImage: '/common/CC.png'
+}
+"#lblDebitCard":{
+	top: '30%',
+	left : '10%',
+	width : '80%',
+	height : '10%',
+	color: 'white',
+	textAlign : 'center',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	borderRadius : 6,
+	backgroundColor : '#001E45',
+	zIndex : -1
+}
+"#getdebitCard":{
+	top: '30%',
+	left: "15%",
+	width: 40,
+	height: 40,
+	//backgroundImage: '/common/DC.png'
+}
+"#lblSecurity":{
+	top: '45%',
+	left : '10%',
+	width : '80%',
+	height : '10%',
+	color: 'white',
+	textAlign : 'center',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	borderRadius : 6,
+	backgroundColor : '#001E45',
+	zIndex : -1
+}
+"#getSecurity":{
+	top: '45%',
+	left: "15%",
+	width: 40,
+	height: 50,
+	//backgroundImage: '/common/User.png'
+}
+"#lblUser":{
+	top: '60%',
+	left : '10%',
+	width : '80%',
+	height : '10%',
+	color: 'white',
+	textAlign : 'center',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	borderRadius : 6,
+	backgroundColor : '#001E45',
+	zIndex : -1
+}
+"#getUser":{
+	top: '60%',
+	left: "15%",
+	width: 45,
+	height: 40,
+	//backgroundImage: '/common/Address.png'
+}
+"#lblVehicle":{
+	top: '75%',
+	left : '10%',
+	width : '80%',
+	height : '10%',
+	color: 'white',
+	textAlign : 'center',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	borderRadius : 6,
+	backgroundColor : '#001E45',
+	zIndex : -1
+}
+"#getVehicle":{
+	top: '75%',
+	left: "15%",
+	width: 40,
+	height: 40,
+	//backgroundImage: '/common/Vehicle.png'
+}

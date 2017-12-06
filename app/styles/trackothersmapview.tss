@@ -1,0 +1,36 @@
+"#showRide":{
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+    titleAttributes:  {
+       color:'white',
+       font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+		}
+    }
+}
+
+
+"#map1[platform=android]": {
+	region: {
+		latitudeDelta:  0.001, //0.003
+		longitudeDelta: 0.001 //0.003
+	},
+	top: '0%',
+	height: '100%',
+	left: '0%',
+	width: '100%',
+	regionFit: true
+}
+
+"#map1[platform=ios]": {
+	region: {
+		latitudeDelta:  0.001, //0.003
+		longitudeDelta: 0.001 //0.003
+	},
+	top: '0%',
+	height: '100%',
+	left: '0%',
+	width: '100%',
+	regionFit: true
+}

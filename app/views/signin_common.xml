@@ -1,0 +1,13 @@
+<Alloy>
+	<View>
+		<TextField  id = "username"  class="commontext"></TextField>
+		<TextField  id = "password"  class="commontext"></TextField>
+		<Label class="commonlabel" id="login" onClick="field_Validation">Login</Label>
+		<Label class="commonlabel" id="gplus" onClick="glogin">Google +</Label>
+		<Label class="commonlabel" id="facebook" onClick="flogin">Facebook</Label>
+		<Label id="forgotpassword" onClick="forgotpassword" platform="android">
+			<AttributedString id="hyper" platform="android">Forgot Password?</AttributedString>
+		</Label>
+		<Label id="forgotpassword" onClick="forgotpassword" platform="ios">Forgot Password? </Label>	
+	</View>
+</Alloy>

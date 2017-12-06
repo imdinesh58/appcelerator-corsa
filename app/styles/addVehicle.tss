@@ -1,0 +1,79 @@
+"#win1":{
+	backgroundImage : '/icons/ucorsaHome.png',
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+    titleAttributes:  {
+       color:'white',
+       font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+		}
+    }
+}
+"MenuItem": {
+    showAsAction: Ti.Android.SHOW_AS_ACTION_ALWAYS
+},
+"#item": {
+	 showAsAction: Ti.Android.SHOW_AS_ACTION_ALWAYS,
+    icon: Ti.Android.R.drawable.ic_menu_add
+}
+
+"#edit":{
+	backgroundImage: '/ediit.png',
+	top: "1%",
+	width: "11%",
+	height: "7%",
+	right: '15%'
+}
+"#add_":{
+	backgroundImage: '/addd.png',
+	top: "1.5%",
+	width: "6%",
+	height: "5.5%",
+	right: '5%'
+}
+
+
+'#carmake': {
+	top: '10%',
+	hintText: 'Make'
+}
+'#carmodel': {
+	top: '20%',
+	hintText: 'Model'
+}
+'#caryear': {
+	top: '50%',
+	hintText: 'Car Year',
+	keyboardType:Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	returnKeyType : Titanium.UI.RETURNKEY_DONE,
+	suppressReturn :true,
+	maxLength : 4
+}
+
+'#carmileage': {
+	top: '40%',
+	hintText: 'Miles',
+	keyboardType:Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	returnKeyType : Titanium.UI.RETURNKEY_DONE,
+	suppressReturn :true
+}
+'#carseats': {
+	top: '30%',
+	hintText: '# of seats',
+	//keyboardType:Titanium.UI.KEYBOARD_PHONE_PAD,
+	keyboardType : Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	maxLength: 2,
+	returnKeyType : Titanium.UI.RETURNKEY_DONE,
+	suppressReturn :true
+}
+'#update': {
+	top: '70%',
+	width: '80%'
+}
+'#add': {
+	top: '60%',
+	width: '80%'
+}
+
+

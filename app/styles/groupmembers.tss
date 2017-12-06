@@ -1,0 +1,53 @@
+"#contact":{
+	backgroundImage : '/icons/ucorsaHome.png',
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+    titleAttributes:  {
+       color:'white',
+       font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+		}
+    }
+}
+
+"#add[platform=ios]":{
+	backgroundImage: '/images/add.png',
+	width: 30,
+	height: 30,
+	right : '3%',
+	top : '5%'
+}
+"#nodata" :{
+	text : "No members found",
+	top : '35%',
+	left : '0%',
+	width : '100%',
+	textAlign : 'center',
+	color : '#001E45',
+	height : '15%',
+	font :{
+		fontSize : '25sp',
+		fontWeight : 'bold'
+	}
+}
+
+"MenuItem": {
+    showAsAction : Ti.Android.SHOW_AS_ACTION_ALWAYS
+},
+"#item": {
+    icon : "/images/add2.png"
+}
+
+"#tableview": {
+	top: '0%',
+	left: '0%',
+	height: '100%',
+	width: '100%',
+	scrollable:true,
+	separatorColor:'white',	
+	search : 'searchView',
+	backgroundColor : '#F2EFE8',
+	filterAttribute: 'filter' //here is the search filter which
+	//appears in TableViewRow
+}

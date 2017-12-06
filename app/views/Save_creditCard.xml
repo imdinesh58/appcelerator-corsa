@@ -1,0 +1,35 @@
+<Alloy>
+		<!-- Android -->
+	<Window id="pay" onOpen="load"  platform="android" onAndroid:back="closeWindow" windowSoftInputMode="Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN" >
+		<ScrollView width="100%" height="100%">
+		<Label id="paypal" platform="android">CreditCard</Label>
+		<TextField id = "number" platform="android" class="commontext"></TextField>
+		<TextField id = "month" platform="android" class="commontext" onBlur="check"></TextField>
+		<TextField id = "year" platform="android"></TextField>
+		<TextField id = "cvv" platform="android" class="commontext"></TextField>
+		<ImageView id="img" platform="android" ></ImageView>
+		<ImageView id="img2" platform="android" onSingletap="Select_card"></ImageView>
+		<ImageView id="img4" platform="android"></ImageView>
+		<Label id="save" class="commonlabel" onClick="validate" platform="android">Next</Label>
+		</ScrollView>
+	</Window>
+		<!-- Ios -->
+		<NavigationWindow id="pay" platform="ios">
+		<Window id="pay1" onOpen="load" platform="ios" class="container" title="Add Credit Card Details" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+		<LeftNavButton>
+			 <ImageView  class="commonBack" onClick="closeWindow" platform="ios"></ImageView>
+		</LeftNavButton>
+		<ScrollView width="100%" height="100%">
+		<Label id="paypal" platform="ios">CreditCard</Label>
+		<TextField  id = "number" platform="ios" class="commontext"></TextField>
+		<TextField  id = "month" platform="ios" class="commontext" onBlur="check"></TextField>
+		<TextField  id = "year" platform="ios"></TextField>
+		<TextField  id = "cvv" platform="ios" class="commontext"></TextField>
+		<ImageView id="img" platform="ios"></ImageView>
+		<ImageView id="img2" platform="ios" onSingletap="Select_card"></ImageView>
+		<ImageView id="img4" platform="ios"></ImageView>
+		<Label id="save" class="commonlabel" onClick="validate" platform="ios">Next</Label>
+		</ScrollView>
+	</Window>
+		</NavigationWindow>
+</Alloy>

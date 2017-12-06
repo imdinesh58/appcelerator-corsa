@@ -1,0 +1,179 @@
+"#win":{
+	backgroundImage : '/icons/ucorsaHome.png',
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+    titleAttributes:  {
+       color:'white',
+       font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+		}
+    }
+}
+//android
+"#IMG1[platform=android]": {
+	top : '25%', //27
+	backgroundImage : '/icons/u_drive_reverse.png',
+	left: "15%",
+	width: 25,
+	height : 25
+}
+"#IMG2[platform=android]": {
+	top : '36%', //'38%', 
+	backgroundImage : '/icons/ridefrom.png',
+	left: "13%",
+	width: 40,
+	height : 30
+}
+"#IMG3[platform=android]": {
+	top : '48%', //49
+	backgroundImage : '/icons/ride_to.png',
+	left: "15%",
+	width: 31,
+	height : 35
+}
+"#IMG4[platform=android]": {
+	top : '61%', //63
+	backgroundImage : '/icons/riders.png',
+	left: "15%",
+	width: 26,
+	height : 26
+}
+//ios
+"#IMG1[platform=ios]": {
+	top : '21%', //33
+	backgroundImage : '/icons/u_drive_reverse.png',
+	left: "14%",
+	width: 20,
+	height : 20
+}
+"#IMG2[platform=ios]": {
+	top : '33%', //44
+	backgroundImage : '/icons/ridefrom.png',
+	left: "13%",
+	width: 35,
+	height : 25
+}
+"#IMG3[platform=ios]": {
+	top : '44%', //55
+	backgroundImage : '/icons/ride_to.png',
+	left: "13%",
+	width: 28,
+	height : 32
+}
+"#IMG4[platform=ios]": {
+	top : '57%', //68
+	backgroundImage : '/icons/riders.png',
+	left: "13%",
+	width: 21,
+	height : 21
+}
+
+"#Refresh":{
+	top: '35%',
+	left : '25%',
+	width : '38%',
+	color: 'white',
+	textAlign : 'center',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	backgroundColor : '#BEB0A3',
+	borderRadius : 6,
+	height : "10%",
+	zIndex : -1
+}
+
+'.custom':{
+	top: '10%',
+	width : '38%',
+	color: 'white',
+	textAlign : 'center',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	backgroundColor : '#BEB0A3',
+	borderRadius : 6,
+	height : "10%",
+	zIndex : -1
+}
+'.customLabel':{
+	left : '10%',
+	width : '80%',
+	color: '#f2efe8', 
+	textAlign: 'center',
+	backgroundColor: '#BEB0A3',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	borderRadius: 6,
+	height : "10%",
+	zIndex : -1
+}
+
+//android
+"#date[platform=android]": {
+	top: '10%',
+	left : '10%'
+}
+"#time[platform=android]": {
+	top: '10%',
+	right : '10%'
+}
+"#drivers[platform=android]":{
+	top: '23%'
+}
+"#ridefrom[platform=android]":{
+	top: '35%'
+}
+"#rideto[platform=android]":{
+	top: '47%'
+}
+"#riders[platform=android]":{
+	top: '59%'
+}
+"#comment[platform=android]" :{
+	top: '71%'
+}
+"#send[platform=android]":{
+	top: '83%',
+	left: "10%",
+	width: '80%',
+	height : '10%'
+}
+///ios
+"#date[platform=ios]": {
+	top: '6%',
+	left : '10%'
+}
+"#time[platform=ios]": {
+	top: '6%',
+	right : '10%'
+}
+"#drivers[platform=ios]":{
+	top: '18%'
+}
+"#ridefrom[platform=ios]":{
+	top: '30%'
+}
+"#rideto[platform=ios]":{
+	top: '42%'
+}
+"#riders[platform=ios]":{
+	top: '54%'
+}
+"#comment[platform=ios]" :{
+	top: '66%'
+}
+"#send[platform=ios]":{
+	top: '78%',
+	left: "10%",
+	width: '80%',
+	height : '10%'
+}

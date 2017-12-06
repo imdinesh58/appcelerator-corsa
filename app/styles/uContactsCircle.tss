@@ -1,0 +1,45 @@
+
+"#circle" : {
+	height : '50dp',
+	width : Ti.UI.SIZE,
+	backgroundColor : '#F2EFE8'
+}
+
+"#showMbrs" : {
+	left : '1%',
+	height : '30dp',
+	width : '30dp',
+	click : 'no'
+}
+
+"#circleName" : {
+	left : '20%',
+	top : '15%',
+	height : 'auto',
+	color : '#726859',
+	font : {
+		fontSize : '15sp',
+		fontWeight : 'bold'
+	}
+}
+
+"#addMbr" : {
+	left : '72%',
+	height : '30dp',
+	width : '30dp',
+	isAddMember : true
+}
+
+"#updtCircle" : {
+	left : '82%',
+	height : '30dp',
+	width : '30dp',
+	isUpdate : true
+}
+
+"#delCircle" : {
+	objName: 'delCircle',
+	left : '92%',
+	height : '30dp',
+	width : '30dp',
+}

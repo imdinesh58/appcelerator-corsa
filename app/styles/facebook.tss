@@ -1,0 +1,12 @@
+"#home":{
+	backgroundImage : '/icons/ucorsaHome.png',
+	// orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+    titleAttributes:  {
+       color:'white',
+       font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+		}
+    }
+}

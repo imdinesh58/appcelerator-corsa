@@ -1,0 +1,9 @@
+
+
+"#table":{
+	top: '0%', //28
+	height: '100%', //40
+	backgroundColor: "#E3DED6",
+	scrollable: true,
+	separatorColor : 'white'
+}

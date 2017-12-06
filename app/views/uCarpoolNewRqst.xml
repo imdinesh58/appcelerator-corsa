@@ -1,0 +1,48 @@
+<Alloy>
+	<!-- Android -->
+	<Tab id="CNR" title="Schedule" platform="android">
+		<Window  id ="window2" onOpen="load" class="container" platform="android" height="100%" onAndroid:back="closeWindow">
+			<Label id="startdate" class="custom" onClick="begin">Start Date</Label>
+		 	<Label id="enddate" class="custom" onClick="end">End Date</Label>
+		    <Label id="date" class="custom" zIndex="-1" onSingletap="DAY_popup"> Ride Frequency </Label>
+			<Label id="time" class="custom" zIndex="-1" onSingletap="time_picker">Time </Label>	
+			<ImageView id="IMG1" ></ImageView>
+			<ImageView id="IMG2" ></ImageView>
+			<ImageView id="IMG3" ></ImageView>
+			<ImageView id="IMG4" ></ImageView>
+			<Label id="drivers" class="customLabel">Available Drivers </Label>
+			<Label id="ridefrom" class="customLabel" onClick="RideFrom">Ride From</Label>
+			<Label id="rideto" class="customLabel" onClick="RideTo">Ride To</Label>
+			<Label id="riders" class="customLabel" onSingletap="pickRiders"># of Riders </Label>
+			<Label id="comment" class="customLabel" onSingletap="comment">Additional Notes</Label>
+			<TextField id="rideFee" class="custom2" onChange="setRideFee">$ / Ride</TextField>
+		 	<Label id="payoutFreq" class="custom" onClick="setPayoutFrequency">Pay Frequency</Label>
+			<Label id="send" class="commonlabel" onClick="save_Carpool">Send</Label>
+		</Window>
+	</Tab>
+	<!-- ios -->
+	<Tab id="CNR" title="SCHEDULE" platform="ios" icon="/images/uride2.png">
+	    <Window  id ="window2" onOpen="load" platform="ios" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK" class="container" height="100%" title="uCarpool">
+		    <LeftNavButton>
+		       <ImageView  class="commonBack" onClick="closeWindow" platform="ios"></ImageView>
+		    </LeftNavButton>
+		    <Label id="startdate" class="custom" onClick="begin">Start Date</Label>
+		 	<Label id="enddate" class="custom" onClick="end">End Date</Label>
+		    <Label id="date" class="custom" zIndex="-1" onSingletap="DAY_popup">Ride Frequency </Label>
+			<Label id="time" class="custom" zIndex="-1" onSingletap="time_popup">Time </Label>	
+			<ImageView id="IMG1" ></ImageView>
+			<ImageView id="IMG2" ></ImageView>
+			<ImageView id="IMG3" ></ImageView>
+			<ImageView id="IMG4" ></ImageView>
+			<Label id="drivers" class="customLabel">Available Drivers </Label>
+			<Label id="ridefrom" class="customLabel" onClick="RideFrom">Ride From</Label>
+			<Label id="rideto" class="customLabel" onClick="RideTo">Ride To</Label>
+			<Label id="riders" class="customLabel" onSingletap="pickRiders"># of Riders </Label>
+			<Label id="comment" class="customLabel" onSingletap="comment">Additional Notes</Label>
+			<TextField id="rideFee" class="custom2" onChange="setRideFee">$ / Ride</TextField>
+		 	<Label id="payoutFreq" class="custom" onClick="setPayoutFrequency">Pay Frequency</Label>
+			<Label id="send" class="commonlabel" onClick="save_Carpool">Send</Label>
+		</Window>
+	</Tab>
+	
+</Alloy>

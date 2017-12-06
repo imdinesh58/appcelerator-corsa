@@ -1,0 +1,17 @@
+<Alloy>
+	<!-- Android -->
+	<Window id="signInWinId" onOpen="load" platform="android" onAndroid:back="closeWindow">
+        <ActionBar id="actionbar" title="Sign In" platform="android"/>
+        <Require src="signin_common" id="signin_common"/>
+	</Window>
+	<!-- Ios -->
+	<NavigationWindow id="signInWinId" platform="ios">
+	<Window  id="signInWinId" onOpen="load" platform="ios" class="container" title="Login" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+		<LeftNavButton>
+			 <ImageView  class="commonBack" onClick="closeWindow" platform="ios"></ImageView>
+		</LeftNavButton>	
+		  <Require src="signin_common" id="signin_common"/>
+	</Window>
+	</NavigationWindow>	
+</Alloy>
+

@@ -1,0 +1,7 @@
+<Alloy>
+	<TableViewRow id="circleMembers">
+		<Label id="memberName"></Label>
+		<Label id="phoneNo"></Label>
+		<ImageView id="delMember" image="/icons/delete.png"></ImageView>
+	</TableViewRow>
+</Alloy>

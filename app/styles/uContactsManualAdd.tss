@@ -1,0 +1,81 @@
+
+".container" : {
+	height : '80%',
+	width : '80%',
+	backgroundColor : '#F2EFE8',
+	borderColor : '#001E45',
+	borderWidth : 2,
+	textAlign : 'center',
+	font : {
+		fontSize : '15sp',
+		fontFamily : 'Fira Sans',
+		fontWeight : 'bold'
+	},
+}
+
+"#titleTxtFld" : {
+	text : 'Add Contact Manually',
+	top : 0,
+	left : '0%',
+	width : '100%',
+	height : '10%',
+	color : 'white',
+	backgroundColor : '#001E45',
+	borderRadius : 1
+}
+
+"#nameTxtFld" : {
+	top : '25%',
+	left : '12%',
+	width : '75%',
+	height : '10%',
+	font : {
+		fontWeight : 'light'
+	},
+	color : '#786658',
+	tintColor : '#786658',
+	backgroundColor : '#cccccc',
+	borderColor : '#001E45',
+	hintText : 'Name',
+	hintTextColor : 'white'
+}
+
+"#mobileNumberTxtFld" : {
+	top : '40%',
+	left : '12%',
+	width : '75%',
+	height : '10%',
+	font : {
+		fontWeight : 'light'
+	},
+	color : '#786658',
+	tintColor : '#786658',
+	backgroundColor : '#cccccc',
+	borderColor : '#001E45',
+	hintText : 'Mobile Number',
+	hintTextColor : 'white',
+	keyboardType : Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	returnKeyType : Titanium.UI.RETURNKEY_DONE,
+	suppressReturn : true
+}
+
+"#cancelBtn" :	{
+	top : '55%',
+	right : '12%',
+	width : '30%',
+	height : '10%',
+	color : 'white',
+	backgroundColor : '#001E45',
+	borderRadius : 7
+}
+	
+"#doneBtn" : {
+	top : '55%',
+	left : '12%',
+	width : '30%',
+	height : '10%',
+	color : 'white',
+	backgroundColor : '#001E45',
+	borderRadius : 7
+}
+

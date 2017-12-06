@@ -1,0 +1,15 @@
+<Alloy>
+	<Window id="win" platform="android" class="container" onOpen="loadWin" fullscreen="false" windowSoftInputMode="Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN" onAndroid:back="Close">
+		<TableView id="table">
+		</TableView>
+	</Window>
+	<NavigationWindow id="win" platform="ios">
+		<Window id="win1" platform="ios" class="container" onOpen="loadWin" title="Summary" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+			<LeftNavButton>
+				<ImageView class="commonBack" platform="ios" onClick="Close"></ImageView>
+			</LeftNavButton>
+			<TableView id="table">
+			</TableView>
+		</Window>
+	</NavigationWindow>
+</Alloy>

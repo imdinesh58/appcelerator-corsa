@@ -1,0 +1,290 @@
+
+".container" : {
+	backgroundColor : '#F2EFE8',
+	borderColor : '#001E45',
+	borderWidth : 2
+}
+
+"#topLabel" : {
+	top : '0%',
+	left : '0%',
+	width : '100%',
+	height : '10%',
+	textAlign : 'center',
+	color : 'white',
+	backgroundColor : '#001E45',
+	font : {
+		fontSize : '15sp',
+		fontFamily : 'Fira Sans',
+		fontWeight : 'bold'
+	},
+	borderRadius : 1
+}
+
+'#bankName[platform=android]': {
+	top: '12%',
+	left: '10%',
+	width : '80%',
+	height : '8%',
+	hintText: 'Bank Name ',
+	hintTextColor: 'white',
+	color: 'white',
+	tintColor: 'white',
+}
+
+'#bankNumber[platform=android]': {
+	top: '22%',
+	left: '10%',
+	width : '80%',
+	height : '8%',
+	hintText: 'Bank Account Number *',
+	hintTextColor: 'white',
+	color: 'white',
+	tintColor: 'white',
+	keyboardType: Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	maxLength : 20,
+	returnKeyType : Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn :true
+}
+
+'#bankRoutingNumber[platform=android]': {
+	top: '32%',
+	left: '10%',
+	width : '80%',
+	height : '8%',
+	hintText: 'Bank Routing Number *',
+	hintTextColor: 'white',
+	color: 'white',
+	tintColor: 'white',
+	keyboardType: Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	maxLength : 20,
+	returnKeyType : Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn :true
+}
+
+'#line1[platform=android]': {
+	top: '42%',
+	left: '10%',
+	width : '80%',	
+	height: '8%',
+	hintText: 'Your Street Address *',
+	hintTextColor: 'white',
+	color: 'white',
+	tintColor: 'white',
+	returnKeyType : Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn :true
+}
+
+'#city[platform=android]': {
+	top: '52%',
+	left: '10%',
+	width : '39%',	
+	height: '8%',
+	hintText: 'Your City',
+	hintTextColor: 'white',
+	color: 'white',
+	tintColor: 'white',
+	returnKeyType : Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn :true
+}
+
+'#state[platform=android]': {
+	top: '52%',
+	left: '51%',
+	width : '39%',
+	height: '8%',
+	hintText: 'Your State',
+	hintTextColor: 'white',
+	color: 'white',
+	tintColor: 'white',
+	backgroundColor: '#BEB0A3',
+	returnKeyType : Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn :true
+}
+
+'#postalCode[platform=android]': {
+	top: '52%',
+	left: '10%',
+	width : '80%',	
+	height: '8%',
+	hintText: 'Your Postal Code *',
+	hintTextColor: 'white',
+	color: 'white',
+	tintColor: 'white',
+	keyboardType:Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	returnKeyType : Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn :true
+}
+
+'#dob[platform=android]': {
+	top: '62%',
+	left: '10%',
+	width : '80%',	
+	height: '8%',
+	hintText: 'DOB(mm-dd-yyyy) *',
+	maxLength : 10,
+	hintTextColor: 'white',
+	color: 'white',
+	tintColor: 'white',
+	backgroundColor: '#BEB0A3',
+	keyboardType:Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	returnKeyType : Titanium.UI.RETURNKEY_DONE,
+	suppressReturn :true
+}
+
+'#ssn[platform=android]': {
+	top: '72%',
+	left: '10%',
+	width : '80%',
+	height: '8%',
+	hintText: 'SSN Last 4 digit *',
+	maxLength : 4,
+	hintTextColor: 'white',
+	color: 'white',
+	tintColor: 'white',
+	backgroundColor: '#BEB0A3',
+	keyboardType:Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	returnKeyType : Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn :true
+}
+
+'#bankName[platform=ios]': {
+	top: '12%',
+	left: '10%',
+	width : '80%',
+	height : '8%',
+	hintText: 'Bank Name ',
+	hintTextColor: '#786658',
+	color: '#786658',
+	tintColor: '#786658'
+}
+
+'#bankNumber[platform=ios]': {
+	top: '22%',
+	left: '10%',
+	width : '80%',
+	height : '8%',
+	hintText: 'Bank Account Number *',
+	hintTextColor: '#786658',
+	color: '#786658',
+	tintColor: '#786658',
+	keyboardType: Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	maxLength : 20,
+	returnKeyType : Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn :true
+}
+
+'#bankRoutingNumber[platform=ios]': {
+	top: '32%',
+	left: '10%',
+	width : '80%',
+	height : '8%',
+	hintText: 'Bank Routing Number *',
+	hintTextColor: '#786658',
+	color: '#786658',
+	tintColor: '#786658',
+	keyboardType: Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	maxLength : 20,
+	returnKeyType : Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn :true
+}
+
+'#line1[platform=ios]': {
+	top: '42%',
+	left: '10%',
+	width : '80%',	
+	height: '8%',
+	hintText: 'Your Street Address *',
+	hintTextColor: '#786658',
+	color: '#786658',
+	tintColor: '#786658',
+	returnKeyType : Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn :true
+}
+
+'#city[platform=ios]': {
+	top: '52%',
+	left: '10%',
+	width : '39%',	
+	height: '8%',
+	hintText: 'Your City *',
+	hintTextColor: '#786658',
+	color: '#786658',
+	tintColor: '#786658',
+	returnKeyType : Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn :true
+}
+
+'#state[platform=ios]': {
+	top: '52%',
+	left: '51%',
+	width : '39%',
+	height: '8%',
+	hintText: 'Your State *',
+	hintTextColor: '#786658',
+	color: '#786658',
+	tintColor: '#786658',
+	backgroundColor: '#BEB0A3',
+	returnKeyType : Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn :true
+}
+
+'#postalCode[platform=ios]': {
+	top: '52%',
+	left: '10%',
+	width : '80%',	
+	height: '8%',
+	hintText: 'Your Postal Code *',
+	hintTextColor: '#786658',
+	color: '#786658',
+	tintColor: '#786658',
+	keyboardType:Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	returnKeyType : Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn :true
+}
+
+'#dob[platform=ios]': {
+	top: '62%',
+	left: '10%',
+	width : '80%',	
+	height: '8%',
+	hintText: 'DOB(mm-dd-yyyy) *',
+	maxLength : 10,
+	hintTextColor: '#786658',
+	color: '#786658',
+	tintColor: '#786658',
+	backgroundColor: '#BEB0A3',
+	keyboardType:Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	returnKeyType : Titanium.UI.RETURNKEY_DONE,
+	suppressReturn :true
+}
+
+'#ssn[platform=ios]': {
+	top: '72%',
+	left: '10%',
+	width : '80%',	
+	height: '8%',
+	hintText: 'SSN Last 4 digit *',
+	maxLength : 4,
+	hintTextColor: '#786658',
+	color: '#786658',
+	tintColor: '#786658',
+	backgroundColor: '#BEB0A3',
+	keyboardType:Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	returnKeyType : Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn :true
+}
+
+'#cancel':{
+	top:'82%',
+	left: '10%',
+	width:'39%',
+	height: '10%',
+}
+
+'#save':{
+	top:'82%',
+	left: '51%',
+	width:'39%',
+	height: '10%',
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="yellowOnBlueTheme" parent="@style/Theme.AppCompat.Translucent">
+    <item name="colorPrimary">#001E45</item>
+    <item name="colorPrimaryDark">#ccb100</item>
+    <item name="colorAccent">#001E45</item>
+    <item name="colorControlNormal">#b3d2ff</item>
+    <item name="colorControlActivated">#74685B</item>
+    <item name="colorControlHighlight">#74685B</item>
+    <item name="colorSwitchThumbNormal">#74685B</item>
+    <item name="android:colorButtonNormal">#001E45</item>
+    <item name="android:colorEdgeEffect">#001E45</item>
+    <item name="android:textColorPrimary">#ffe74d</item>
+</style>
+</resources>

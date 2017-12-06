@@ -1,0 +1,96 @@
+"#win":{
+	backgroundColor: "#F2EFE8",
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+    titleAttributes:  {
+       color:'white',
+       font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+		}
+    }
+}
+
+"#tableview[platform=android]": {
+	top: '0%',
+	left: '0%',
+	height: '100%',
+	width: '100%',
+	scrollable:true,
+	separatorColor : 'white',
+	backgroundColor: '#f2efe8', //E1DCD7  //f2efe8 //BEB0A3
+	separatorStyle :  0
+}
+
+"#tableview[platform=ios]": {
+	top: '0%',
+	left: '0%',
+	height: '100%',
+	width: '100%',
+	scrollable:true,
+	separatorColor : 'white',
+	backgroundColor: '#f2efe8', //E1DCD7  //f2efe8 //BEB0A3
+	separatorStyle : Titanium.UI.iPhone.TableViewSeparatorStyle.NONE,
+	separatorStyle :  0
+}
+
+"#tableview2[platform=android]": {
+	top: '40%',
+	left: '0%',
+	height: '70%',
+	width: '100%',
+	scrollable:true
+}
+"#tableview2[platform=ios]": {
+	top: '40%',
+	left: '0%',
+	height: '65%',
+	width: '100%',
+	scrollable: true,
+	backgroundColor:'#f2efe8',
+	separatorStyle : Titanium.UI.iPhone.TableViewSeparatorStyle.NONE
+}
+"#loadmore[platform=android]":{
+	bottom: '0%',
+	height: '8%',
+	width: '100%',
+	textAlign: 'center',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	color : "white",
+	text : "Load More",
+	backgroundColor : "lightgray",
+	zIndex : -1
+}
+"#loadmore[platform=ios]":{
+	bottom: '0%',
+	height: '10%',
+	width: '100%',
+	textAlign: 'center',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	color : "white",
+	text : "Load More",
+	backgroundColor : "lightgray",
+	zIndex : -1
+}
+"#activityIndicator":{
+	color: "#001E45",
+	font: {
+		fontSize: "15sp",
+		fontWeight : 'bold'
+	},
+	message: 'Loading history...',
+	top: "35%",
+	left: "0%",
+	textAlign : 'center',
+	indicatorColor: 'green',
+	height: '15%',
+	width: '100%'
+}

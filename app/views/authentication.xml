@@ -1,0 +1,53 @@
+<Alloy>
+	<!--android -->
+	<Window id="win" onOpen="load" platform="android" onAndroid:back="closeWindow" windowSoftInputMode="Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN">
+		<ActionBar id="actionbar" title="                         Sign Up!" platform="android"/>
+		<ScrollView height="100%" width="100%">
+		<OptionDialog id="dialog" title="Add credit card details to pay for rides..." platform="android" onClick="chooseRole"> 
+			<Options>
+				 <Option>Credit Card</Option> 
+                 <Option>Cancel</Option>
+			</Options>
+		</OptionDialog>
+		<TextField  id = "Fname" ></TextField>
+		<TextField  id = "Lname"></TextField>
+		<TextField  id = "phone" class="commontext" onBlur="blurPhone" platform="android"></TextField>
+		<TextField  id = "affiliation"  class="commontext" onBlur="blurAffliation" platform="android"></TextField>		
+		<TextField  id = "email" class="commontext" onBlur="blurEmail" platform="android"></TextField>
+		<TextField  id = "password" class="commontext" onBlur="blurPassword" platform="android"></TextField>
+		<TextField  id = "confirmpassword"  class="commontext" onBlur="blurConfirmPwd" platform="android"></TextField>
+	    <Label id="creditCard" onClick="getCreditCardDetails" platform="android"> Add Credit Card Details (optional)</Label>
+	    <Label id="save" class="commonlabel" onTouchstart="verify" onClick="verify" platform="android">Register</Label>
+	</ScrollView>
+	</Window>
+	<!-- ios  -->
+	<NavigationWindow id="win" platform="ios">
+		<Window id="win1" onOpen="load" platform="ios" class="container" title="Sign Up!" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+		<LeftNavButton>
+			 <ImageView  class="commonBack" onClick="closeWindow" platform="ios"></ImageView>
+		</LeftNavButton>
+		<ScrollView height="98%" width="100%">
+		<OptionDialog id="dialog" title="Add credit card details to pay for rides..." platform="ios" onClick="chooseRole"> 
+			<Options>
+				 <Option>Credit Card</Option>
+                 <Option>Cancel</Option>
+			</Options>
+		</OptionDialog>	
+		<TextField  id = "Fname"></TextField>
+		<TextField  id = "Lname"></TextField>
+		<TextField  id = "phone" class="commontext" onBlur="blurPhone" platform="ios"></TextField>
+		<TextField  id = "affiliation"  class="commontext" onBlur="blurAffliation" platform="ios"></TextField>
+		<TextField  id = "email" class="commontext" onBlur="blurEmail" platform="ios"></TextField>
+		<TextField  id = "password" class="commontext" onBlur="blurPassword" platform="ios"></TextField>
+		<TextField  id = "confirmpassword"  class="commontext" onBlur="blurConfirmPwd" platform="ios"></TextField>
+	    <Label  id="creditCard" onClick="getCreditCardDetails" platform="ios"> Add Credit Card Details (optional)</Label>
+	    <Label id="save" class="commonlabel" onTouchstart="verify" onClick="verify" platform="ios">Register</Label>
+		<!-- <Label id="next" class="commonlabel" onTouchstart="next_serviceCall" onClick="next_serviceCall" platform="ios">Next</Label> -->	</ScrollView>
+	</Window>
+	</NavigationWindow>	
+</Alloy>
+
+
+
+
+

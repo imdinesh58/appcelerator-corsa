@@ -1,0 +1,19 @@
+<Alloy>
+	<!-- Android -->
+	<Tab title="Transactions Today" platform="android">
+		<Window id="win" platform="android" onOpen="load" onAndroid:back="closeWindow">
+			<TableView id="tableview" platform="android"></TableView>
+			<Label id="nodata" platform="android">No Transactions Done for Today</Label>	
+		</Window>
+	</Tab>
+	<!-- IOS -->
+	<Tab  title="Transactions Today" platform="ios" icon="/icons/payment3.png">
+		<Window id="win" platform="ios" onOpen="load" title="Payments" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+			<LeftNavButton>
+				<ImageView  class="commonBack" onClick="closeWindow" platform="ios"></ImageView>
+			</LeftNavButton>
+			<TableView id="tableview" platform="ios"></TableView>
+			<Label id="nodata" platform="ios">No Transactions Done for Today</Label>	
+		</Window>
+	</Tab>
+</Alloy>

@@ -1,0 +1,60 @@
+// "#win":{
+// backgroundColor: "#F2EFE8",
+// orientationModes: [],
+// barColor: '#001E45',
+// titleAttributes:  {
+// color: 'white',
+// font: {
+// fontSize: '15sp',
+// fontWeight: 'bold'
+// }
+// }
+// }
+
+"#table":{
+	top: '0%', //28
+	height: '90%', //40
+	backgroundColor: "#E3DED6",
+	scrollable: true
+}
+
+"#row":{
+	height: 50,
+	backgroundColor: '#E3DED6'
+}
+
+"#textfield":{
+	width: '80%',
+	height: 50,
+	left: 0,
+	bottom: '0%', //14
+	color: "black",
+	hintTextColor: 'black',
+	hintText: 'type your message',
+	tintColor: 'black',
+	value: "",
+	border: 1,
+	backgroundColor: 'white',
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderRadius: 4,
+	font: {
+		fontSize: '14dp',
+		fontWeight: 'bold'
+	}
+}
+
+"#button":{
+	text: 'Send',
+	bottom: '0%', //top 14
+	left: "80%",
+	width: '20%',
+	height: 50,
+	borderRadius: 6,
+	textAlign: "center",
+	backgroundColor: '#001e45',
+	color: 'white',
+	font: {
+		fontSize: '15dp'
+	}
+}
+

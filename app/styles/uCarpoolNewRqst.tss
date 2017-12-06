@@ -1,0 +1,135 @@
+".container":{
+	backgroundImage: '/icons/ucorsaHome.png',
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+	titleAttributes:  {
+		color: 'white',
+		font: {
+			fontSize: '15sp',
+			fontWeight: 'bold'
+		}
+	}
+}
+'.customLabel':{
+	left: '10%',
+	width: '80%',
+	color: '#f2efe8',
+	textAlign: 'center',
+	backgroundColor: '#BEB0A3',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	borderRadius: 6,
+	height: "8%",
+	zIndex: -1
+}
+'.custom':{
+	width: '38%',
+	color: 'white',
+	textAlign: 'center',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	backgroundColor: '#BEB0A3',
+	borderRadius: 6,
+	height: "8%",
+	zIndex: -1
+}
+
+"#startdate": {
+	top: '2%',
+	left: '10%'
+}
+"#enddate": {
+	top: '2%',
+	right: '10%'
+}
+"#date": {
+	top: '13%',
+	left: '10%'
+}
+"#time": {
+	top: '13%',
+	right: '10%'
+}
+"#IMG1": {
+	top: '25%',
+	backgroundImage: '/icons/u_drive_reverse.png',
+	left: "14%",
+	width: 25,
+	height: 25
+}
+"#drivers":{
+	top: '24%'
+}
+"#IMG2": {
+	top: '36.5%',
+	backgroundImage: '/icons/ridefrom.png',
+	left: "13%",
+	width: 40,
+	height: 30
+}
+"#ridefrom":{
+	top: '36%'
+}
+"#IMG3": {
+	top: '48.5%',
+	backgroundImage: '/icons/ride_to.png',
+	left: "13%",
+	width: 31,
+	height: 35
+}
+"#rideto":{
+	top: '48%'
+}
+"#IMG4": {
+	top: '61%',
+	backgroundImage: '/icons/riders.png',
+	left: "13%",
+	width: 26,
+	height: 26
+}
+"#riders":{
+	top: '60%'
+}
+"#comment":{
+    top : '70%'
+}
+"#rideFee": {
+	top: '80%',
+	left: '10%'
+}
+"#payoutFreq": {
+	top: '80%',
+	right: '10%'
+}
+"#send":{
+	top: '90%',
+	left: "10%",
+	width: '80%',
+	height: "8%"
+}
+'.custom2':{
+	width: '38%',
+	hintTextColor : "white",
+	hintText : "$ / Ride",
+	color: 'white',
+	textAlign: 'center',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	backgroundColor: '#BEB0A3',
+	borderRadius: 6,
+	height: "8%",
+	zIndex: -1,
+	keyboardType:Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	returnKeyType: Titanium.UI.RETURNKEY_DONE ,
+	suppressReturn: true
+}
+

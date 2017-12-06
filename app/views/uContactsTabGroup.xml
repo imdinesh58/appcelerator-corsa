@@ -1,0 +1,14 @@
+<Alloy>
+		<!--Android -->
+	<TabGroup id="uContactsTabGroupId"  class="container" platform="android" onOpen="load" windowSoftInputMode="Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN" onAndroidback="androidBackEventHandler">	
+		<Require id="uContactsFriendsId" src = "uContactsFriends"  platform="android"/>
+		<Require  id="uContactsPhoneNumbersId" src = "uContactsPhoneNumbers"  platform="android"/>
+		<Require id="uContactsCirclesId" src = "uContactsCircles"  platform="android" />
+	</TabGroup>
+		<!--ios -->
+	<TabGroup id="uContactsTabGroupId"  platform="ios" onOpen="load" tabsBackgroundColor="#000023"  barColor="#000023">
+		<Require id="uContactsFriendsId" src = "uContactsFriends"  platform="ios"/>
+		<Require  id="uContactsPhoneNumbersId" src = "uContactsPhoneNumbers"  platform="ios"/>
+		<Require id="uContactsCirclesId" src = "uContactsCircles"  platform="ios"/>
+	</TabGroup>
+</Alloy>	

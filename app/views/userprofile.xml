@@ -1,0 +1,36 @@
+<Alloy>
+	<!-- Android -->
+	<Window id="win1" onOpen="load" platform="android" onAndroid:back="WindowClose" windowSoftInputMode="Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN">
+		<ScrollView height="100%" width="100%">
+		<Label id="addBtn" platform="android"  onSingletap="addaddress"></Label>
+		<!-- <ImageView id="edit" platform="android" onClick="readonlydisable" onSingletap="readonlydisable"></ImageView> -->
+        <TextField  id = "firstname" platform="android" class="commontext"></TextField>
+        <TextField  id = "email" platform="android" class="commontext"></TextField>
+		<TextField  id = "phone" platform="android" class="commontext"></TextField>
+		<Label id="update" class="commonlabel" platform="android" onSingletap="save" onClick="save">Update</Label>
+		<TableView id="tableview" platform="android" searchAsChild="false"></TableView>	
+		<Label id="nodata" platform="android">No Address found</Label>
+		</ScrollView>
+	</Window>
+	<!-- ios -->
+	<NavigationWindow id="win1" platform="ios">
+	<Window id="win2" onOpen="load" platform="ios" class="container" title="Address" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+		<LeftNavButton>
+			 <ImageView  class="commonBack" onClick="WindowClose" platform="ios"></ImageView>
+		</LeftNavButton>
+		 <RightNavButtons>	
+		 	<ImageView id="addImg" platform="ios" onClick="addaddress"></ImageView>
+			<!-- <Label id="addLbl" platform="ios"  onClick="addaddress">Add Address</Label> -->
+		</RightNavButtons> 
+		<ScrollView height="100%" width="100%">
+		<!-- <Label id="addLbl" platform="ios"  onClick="addaddress">Add Address</Label> -->
+		<TextField  id = "firstname" platform="ios" class="commontext"></TextField>
+        <TextField  id = "email" platform="ios" class="commontext"></TextField>
+		<TextField  id = "phone" platform="ios" class="commontext"></TextField>
+		<Label id="update" class="commonlabel" platform="ios" onClick="save" onSingletap="save">Update</Label>
+		<TableView id="tableview" platform="ios" searchAsChild="false"></TableView>	
+		<Label id="nodata" platform="ios">No Address found</Label>	
+		</ScrollView>
+	</Window>
+	</NavigationWindow>
+</Alloy>

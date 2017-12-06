@@ -1,0 +1,53 @@
+"#winCircles":{
+	backgroundImage : '/icons/ucorsaHome.png',
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+    titleAttributes:  {
+       color:'white',
+       font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+		}
+    }
+}
+"#add[platform=ios]":{
+	backgroundImage: '/images/addNew.png',
+	width: 30,
+	height: 30,
+	right : '3%',
+	top : '5%'
+}
+
+"#tableCircles[platform=ios]": {
+	top: '0%',
+	left: '0%',
+	height: '70%',
+	width: '100%',
+	scrollable:true,
+	separatorColor : '#DCDAD1', //DCDAD1,
+	backgroundColor : '#F2EFE8'
+}
+
+"#tableCircles[platform=android]": {
+	top: '0%',
+	left: '0%',
+	height: '70%',
+	width: '100%',
+	scrollable:true,
+	separatorColor : '#DCDAD1', //DCDAD1,
+	backgroundColor : '#F2EFE8'
+}
+
+"#nodata" :{
+	text : "No Circles found",
+	top : '35%',
+	left : '0%',
+	width : '100%',
+	textAlign : 'center',
+	color : '#001E45',
+	height : '15%',
+	font :{
+		fontSize : '20sp',
+		fontWeight : 'bold'
+	}
+}

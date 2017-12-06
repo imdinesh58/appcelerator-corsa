@@ -1,0 +1,64 @@
+<Alloy>
+	<!-- Android -->
+	<Window id="win" onOpen="load" platform="android" onAndroid:back="showDialog">
+		<View id="mainview" platform="android" >
+			<View id="btnView">
+				<Label class="HomeLabel" id="uRide_" platform="android" onClick="uRide" zIndex="-1">uRide</Label>
+				<Label class="HomeLabel" id="uDrive_" platform="android" onClick="uDrive" zIndex="-1">uDrive</Label>
+				<Label class="HomeLabel" id="ucarpool_" platform="android" onClick="uCarpool" zIndex="-1">Recurring Ride</Label>
+				<ImageView id="uRide"  onClick="uRide" platform="android" zIndex="-1"></ImageView>
+				<ImageView id="uDrive"  onClick="uDrive" platform="android" zIndex="-1"></ImageView>
+				<ImageView id="uCarPool" onClick="uCarpool" platform="android" zIndex="-1"></ImageView>	
+				<ImageView id="options" platform="android" onClick="Show"></ImageView>
+				<Label id="options_" platform="android" onClick="Show">OPTION DETAILS</Label>
+			</View>	
+			<ImageView id="Details" platform="android" onClick="hide"></ImageView>
+			<ImageView id="contacts" class="Home_IMG" onClick="getContacts" platform="android"></ImageView>
+			<ImageView id="accounts" class="Home_IMG" onClick="getAccounts" platform="android"></ImageView>
+			<ImageView id="trackRides" class="Home_IMG" onClick="TrackRides" platform="android"></ImageView>
+			<ImageView id="payments" class="Home_IMG" onClick="paymentTab" platform="android"></ImageView>
+			<Label id="version" platform="android">Copyright © 2017,EMJ DEVELOPMENT       Ver 20.0.0 </Label>
+		</View>
+        <AlertDialog id="dialog" onClick="doClick" title="Logout?" cancel="1">
+            <ButtonNames>
+                <ButtonName>Yes</ButtonName>
+                <ButtonName>No</ButtonName>
+            </ButtonNames>
+        </AlertDialog>
+	</Window>
+	<!-- IOS -->
+	<NavigationWindow id="Navwin" platform="ios">
+		<Window id="win" onOpen="load" platform="ios" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+			<RightNavButton>
+				<Label  onClick="showDialog" platform="ios" id="Logout">LOG OUT</Label>
+			</RightNavButton>
+			<LeftNavButtons>
+				<ImageView  id="menuIos" platform="ios"></ImageView>
+			</LeftNavButtons>
+			<View id="mainview" platform="ios">
+				<View id="btnView">
+					<Label class="HomeLabel" id="uRide_" platform="ios" onClick="uRide" zIndex="-1">uRide</Label>
+					<Label class="HomeLabel" id="uDrive_" platform="ios" onClick="uDrive" zIndex="-1">uDrive</Label>
+					<Label class="HomeLabel" id="ucarpool_" platform="ios" onClick="uCarpool" zIndex="-1">Recurring Ride</Label>
+					<ImageView id="uRide"  onClick="uRide" platform="ios" zIndex="-1"></ImageView>
+					<ImageView id="uDrive"  onClick="uDrive" platform="ios" zIndex="-1"></ImageView>
+					<ImageView id="uCarPool" onClick="uCarpool" platform="ios" zIndex="-1"></ImageView>
+					<ImageView id="options" platform="ios" onClick="Show" zIndex="-1"></ImageView>
+					<Label id="options_" platform="ios" onClick="Show">OPTION DETAILS</Label>
+				</View>	
+				<ImageView id="Details" onClick="hide" platform="ios"></ImageView>
+				<ImageView id="contacts" class="Home_IMG" onClick="getContacts" platform="ios"></ImageView>
+				<ImageView id="accounts" class="Home_IMG" onClick="getAccounts" platform="ios"></ImageView>
+				<ImageView id="trackRides" class="Home_IMG" onClick="TrackRides" platform="ios"></ImageView>
+				<ImageView id="payments" class="Home_IMG" onClick="paymentTab" platform="ios"></ImageView>
+				<Label id="version" platform="ios">Copyright © 2017,EMJ DEVELOPMENT      Ver 9.8.0 </Label>
+			</View>
+	        <AlertDialog id="dialog" onClick="doClick" title="Logout?" cancel="1">
+	            <ButtonNames>
+	                <ButtonName>Yes</ButtonName>
+	                <ButtonName>No</ButtonName>
+	            </ButtonNames>
+	        </AlertDialog>
+		</Window>
+	</NavigationWindow>
+</Alloy>

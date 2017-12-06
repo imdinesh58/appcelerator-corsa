@@ -1,0 +1,7 @@
+<Alloy>
+	<View>
+		<ImageView id="img"></ImageView>
+		<Label class="commonlabel" id ="signin" onClick="signin">Sign In</Label>
+		<Label class="commonlabel" id ="register" onClick="register">Sign Up!</Label>
+	</View>
+</Alloy>

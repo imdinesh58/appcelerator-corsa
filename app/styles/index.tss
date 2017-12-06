@@ -1,0 +1,16 @@
+'#indexWinId': {
+	backgroundImage: "/background.png",
+	orientationModes: [Ti.UI.PORTRAIT],
+	exitOnClose: true,
+	navBarHidden: true,
+	theme: "Theme.AppCompat.Translucent.NoTitleBar",
+	barColor: '#001E45',
+    titleAttributes:  {
+       color:'white',
+       font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+		}
+    }
+}
+

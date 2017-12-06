@@ -1,0 +1,32 @@
+<Alloy>
+	<!-- Android -->
+	<Window id="ridefrom" onOpen="load" platform="android" windowSoftInputMode="Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN" onAndroid:back="closeWindow">
+		<TextField id ="txtrideFrom" platform="android" class="common_text" onChange="FromLocation"></TextField>
+		<View id="container">
+			<TableView id="autocomplete_table" onClick="GetLocation1"></TableView>
+		</View>
+		<View id="mapView" height="100%" width="100%" top="25%" platform="android" windowSoftInputMode="Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN">
+			<Module id="map1" module="ti.map" method="createView" platform="android"></Module>
+			<Label id="clear" onSingletap="clear" platform="android">Clear</Label>
+		</View>
+	</Window>
+	<!-- ios -->
+	<NavigationWindow id="ridefrom" platform="ios">
+	<Window id="ridefrom1" onOpen="load" platform="ios" title="Pick Address" class="container" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+		<LeftNavButton>
+			 <ImageView  class="commonBack" onClick="closeWindow" platform="ios"></ImageView>
+		</LeftNavButton>
+		<RightNavButton>
+			 <Label id="done" onClick="done" platform="ios">Done</Label>
+		</RightNavButton>
+		<TextField id ="txtrideFrom" platform="ios" class="common_text_" onChange="FromLocation"></TextField>
+			<View id="container">
+				<TableView id="autocomplete_table" onClick="GetLocation1"></TableView>
+			</View>
+			<View id="mapView" height="100%" width="100%" top="25%" platform="ios">
+				<Module id="map1" module="ti.map" method="createView" platform="ios"></Module>
+				<Label id="clear" onSingletap="clear" platform="ios">Clear</Label>
+			</View>
+	</Window>
+	</NavigationWindow>
+</Alloy>

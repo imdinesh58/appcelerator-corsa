@@ -1,0 +1,27 @@
+<Alloy>
+	<!-- Android -->
+	<Window id="edit" platform="android" onOpen="load" onAndroid:back="closeWindow">
+		 <ImageView id="IMG" platform="android"></ImageView>
+		 <ImageView id="img2" platform="android"></ImageView>
+		 <ImageView id="img3" platform="android"></ImageView>
+		 <Label id="photo" platform="android" ></Label>
+		 <Label id="name" platform="android"></Label>
+		 <Label id="phone" platform="android" class="customLabel"></Label>
+		 <Label id="email" platform="android" class="customLabel"></Label>
+	</Window>
+	<!-- ios -->
+	<NavigationWindow id="edit" platform="ios">
+		 <Window id="edit1" onOpen="load" platform="ios" title="Contacts" class="container" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+		 <LeftNavButton>
+			 <ImageView  class="commonBack" onClick="closeWindow" platform="ios"></ImageView>
+		 </LeftNavButton>
+		 <ImageView id="IMG" platform="ios"></ImageView>
+		 <ImageView id="img2" platform="ios"></ImageView>
+		 <ImageView id="img3" platform="ios"></ImageView>
+		 <Label id="photo" platform="ios"></Label>
+		 <Label id="name" platform="ios"></Label>
+		 <Label id="phone" platform="ios" class="customLabel"></Label>
+		 <Label id="email" platform="ios" class="customLabel"></Label>
+	</Window>
+	</NavigationWindow>
+</Alloy>

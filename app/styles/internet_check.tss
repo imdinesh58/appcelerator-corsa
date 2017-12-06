@@ -1,0 +1,61 @@
+"#win1":{
+	backgroundImage : '/icons/ucorsaHome.png',
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+    titleAttributes:  {
+       color:'white',
+       font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+		}
+    }
+}
+'#img[platform=android]':{
+	top: '12%',
+	image: '/images/wifi.png',
+	left: '23%',
+	width: 200,
+	height: 200
+}
+
+"#refresh[platform=android]":{
+	top: '55%',
+	text : 'Refresh',
+	color: 'white', // Yellow ffe74d   // off white f2efe8
+	textAlign: 'center',
+	backgroundColor: '#001E45',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	borderRadius: 6,
+	left : "32%",
+	width : "40%"
+}
+
+
+'#img[platform=ios]':{
+	top: '12%',
+	image: '/images/wifi.png',
+	left: '25%',
+	width: 200,
+	height: 200
+}
+
+"#refresh[platform=ios]":{
+	top: '60%',
+	text : 'Refresh',
+	color: 'white', // Yellow ffe74d   // off white f2efe8
+	textAlign: 'center',
+	backgroundColor: '#001E45',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	borderRadius: 6,
+	left : "32%",
+	width : "40%"
+}
+

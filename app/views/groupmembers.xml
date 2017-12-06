@@ -1,0 +1,26 @@
+<Alloy>
+	<!-- Android -->
+	<Window id="contact" onOpen="load" platform="android" onAndroid:back="CloseWindow">
+		<ActionBar id="actionbar" title="                   Add Members" platform="android"/>
+		 <Menu>
+            <MenuItem id="item" title="Next" onClick="done" platform="android"/>
+        </Menu>
+		<TableView id="tableview" searchAsChild="true" platform="android">
+		</TableView>
+		<Label id="nodata" platform="android">No members found</Label>
+	</Window>
+	<!-- Ios -->
+	<NavigationWindow id="contact" platform="ios">
+	<Window id="contact1" onOpen="load" platform="ios" class="container" title="Add Members" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+		<LeftNavButton>
+			 <ImageView  class="commonBack" onClick="CloseWindow" platform="ios"></ImageView>
+		</LeftNavButton>
+		<RightNavButton>
+			 <ImageView id="add" onClick="done" platform="ios"></ImageView>
+		</RightNavButton>
+		<TableView id="tableview" searchAsChild="true" platform="ios">
+		</TableView>
+		<Label id="nodata" platform="ios">No members found</Label>
+	</Window>
+	</NavigationWindow>
+</Alloy>	

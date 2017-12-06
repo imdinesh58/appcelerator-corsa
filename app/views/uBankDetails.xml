@@ -1,0 +1,30 @@
+<Alloy>
+	<Window id="bankDetails" height="90%" width="90%" onOpen="onload" platform="android" windowSoftInputMode="Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN">
+		<ScrollView id="bdView" class="container">
+			<Label id="topLabel" class="commonlabel">Bank Account Details</Label>
+			<TextField id = "bankName"  class="commontext"></TextField>
+			<TextField id = "bankNumber"  class="commontext"></TextField>
+			<TextField id = "bankRoutingNumber"  class="commontext"></TextField>
+			<TextField id = "line1" class="commontext"></TextField>
+			<TextField id = "postalCode" class="commontext" onBlur="populateAddress"></TextField>
+			<TextField id = "dob" class="commontext" onChange="ChangeDob"></TextField>
+			<TextField id = "ssn" class="commontext"></TextField>
+			<Label id="cancel" class="commonlabel" onClick="doCancel">Cancel</Label>
+			<Label id="save" class="commonlabel" onClick="doSave">Save</Label>
+		</ScrollView>
+	</Window>
+	<Window id="bankDetails" height="90%" width="90%" onOpen="onload" platform="ios" modal="true">
+		<ScrollView id="bdView" class="container">
+			<Label id="topLabel" class="commonlabel">Bank Account Details</Label>
+			<TextField id = "bankName"  class="commontext"></TextField>
+			<TextField id = "bankNumber"  class="commontext"></TextField>
+			<TextField id = "bankRoutingNumber"  class="commontext"></TextField>
+			<TextField id = "line1" class="commontext"></TextField>
+			<TextField id = "postalCode" class="commontext" onBlur="populateAddress"></TextField>
+			<TextField id = "dob" class="commontext" onChange="ChangeDob"></TextField>
+			<TextField id = "ssn" class="commontext"></TextField>
+			<Label id="cancel" class="commonlabel" onClick="doCancel">Cancel</Label>
+			<Label id="save" class="commonlabel" onClick="doSave">Save</Label>
+		</ScrollView>
+	</Window>
+</Alloy>

@@ -1,0 +1,24 @@
+<Alloy>
+	<!-- Android -->
+	<Window id="win" onOpen="loadfromservice" platform="android" onAndroid:back="WindowClose">
+		<!-- <ImageView id="add" platform="android" onSingletap="AddPay"></ImageView> -->
+		<TableView id="tableview" platform="android" searchAsChild="false"></TableView>			
+		<Label id="nodata" platform="android">No Credit Card details found</Label>
+		<Label id="help" onClick="help"></Label>
+	</Window>
+	<!-- ios -->
+	<NavigationWindow id="win" platform="ios">
+	<Window id="win1" onOpen="loadfromservice" platform="ios" class="container" title="Add Credit Card for paying up rides" fullscreen="true" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+		<LeftNavButton>
+			 <ImageView  class="commonBack" onClick="WindowClose" platform="ios"></ImageView>
+		</LeftNavButton>
+		<!-- <ImageView id="add" platform="ios" onSingletap="AddPay" ></ImageView> -->
+		<RightNavButton>
+			<ImageView id="add" onClick="AddPay" platform="ios"></ImageView>
+		</RightNavButton>
+		<Label id="help" onClick="help"></Label>
+		<TableView id="tableview" platform="ios" searchAsChild="false"></TableView>			
+		<Label id="nodata" platform="ios">No Credit Card details found</Label>
+	</Window>
+	</NavigationWindow>
+</Alloy>

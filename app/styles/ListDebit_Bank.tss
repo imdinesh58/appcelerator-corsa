@@ -1,0 +1,63 @@
+"#win":{
+	backgroundImage: '/icons/ucorsaHome.png',
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+	titleAttributes:  {
+		color: 'white',
+		font: {
+			fontSize: '15sp',
+			fontWeight: 'bold'
+		}
+	}
+}
+"#add[platform=android]":{
+	backgroundImage: '/icons/addd.png',
+	top: "1%",
+	width: 30,
+	height: 30,
+	right: '2%'
+}
+"#add[platform=ios]":{
+	backgroundImage: '/common/add.png',
+	width: 30,
+	height: 30,
+	right: '3%',
+	top: '5%'
+}
+
+"#nodata":{
+	top: '30%',
+	left: '0%',
+	width: '100%',
+	textAlign: 'center',
+	color: '#001E45',
+	height: '15%',
+	font:{
+		fontSize: '15sp',
+		fontWeight: 'bold'
+	}
+}
+"#help":{
+	backgroundImage: '/common/help.png',
+	width: 50,
+	height: 50,
+	right: '2%',
+	top: '1%'
+}
+"#tableview[platform=android]": {
+	top: '10%',
+	left: '0%',
+	height: '75%',
+	width: '100%',
+	scrollable: true,
+	separatorColor: 'white'
+}
+"#tableview[platform=ios]": {
+	top: '10%',
+	left: '0%',
+	height: '75%',
+	width: '100%',
+	scrollable: true,
+	backgroundColor: '#f2efe8',
+	separatorStyle: Titanium.UI.iPhone.TableViewSeparatorStyle.NONE
+}

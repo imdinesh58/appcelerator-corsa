@@ -1,0 +1,22 @@
+<Alloy>
+	<!-- Android -->
+	<Window  id="winContacts" platform="android" onOpen="Contacts" onAndroid:back="closeWindow">
+		<ActionBar id="actionbar" title="                    Driver Contacts" platform="android"/>
+		<Menu>
+		<MenuItem id="item" title="DONE" onClick="done" platform="android"/> 
+		</Menu>
+		<TableView id="tableview" platform="android"></TableView>
+	</Window>
+	<!-- ios -->
+	<NavigationWindow id="winContacts" platform="ios">
+	<Window class="container" id="winContacts1" platform="ios" onOpen="Contacts" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK" title="Driver Contacts">
+		<LeftNavButton>
+			 <ImageView class="commonBack" onClick="closeWindow" platform="ios"></ImageView>
+		</LeftNavButton>
+		<RightNavButton>
+			<Label id="done" onClick="add" platform="ios"></Label>
+		</RightNavButton>
+	<TableView id="tableview" platform="ios"></TableView>
+	</Window>
+	</NavigationWindow>	
+</Alloy>

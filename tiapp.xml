@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <id>com.www.ucorsa</id>
+    <name>uCorsa</name>
+    <version>3.0</version>
+    <publisher>apple-1</publisher>
+    <url/>
+    <description>undefined</description>
+    <copyright>2016 by apple-1</copyright>
+    <icon>appicon.png</icon>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>3be1911a-1d09-40db-9111-5540039974a5</guid>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <ios>
+        <enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
+        <min-ios-ver>8.0</min-ios-ver>
+        <plist>
+            <dict>
+                <key>CFBundleShortVersionString</key>
+                <string>3.1</string>
+                <key>CFBundleVersion</key>
+                <string>1.1</string>
+                <key>NSLocationWhenInUseUsageDescription</key>
+                <string>Test NSLocationWhenInUseUsageDescription</string>
+                <!--<key>NSLocationAlwaysUsageDescription</key>
+                <string>Test NSLocationAlwaysUsageDescription</string> -->
+                <key>UISupportedInterfaceOrientations~iphone</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                </array>
+                <key>UISupportedInterfaceOrientations~ipad</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                    <string>UIInterfaceOrientationPortraitUpsideDown</string>
+                    <string>UIInterfaceOrientationLandscapeLeft</string>
+                    <string>UIInterfaceOrientationLandscapeRight</string>
+                </array>
+                <key>UIRequiresPersistentWiFi</key>
+                <false/>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+                <key>UIStatusBarHidden</key>
+                <false/>
+                <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleDefault</string>
+                <key>CFBundleURLTypes</key>
+                <array>
+                    <dict>
+                        <key>CFBundleURLName</key>
+                        <!-- Application ID same as the id value in the tiapp.xml file -->
+                        <string>com.www.ucorsa</string>
+                        <key>CFBundleURLSchemes</key>
+                        <array>
+                            <!-- Prefix the Facebook App ID with 'fb' -->
+                            <string>fb514936425347785</string>
+                        </array>
+                    </dict>
+                </array>
+                <key>FacebookAppID</key>
+                <!-- Facebook App ID -->
+                <string>514936425347785</string>
+                <key>FacebookDisplayName</key>
+                <!-- Facebook App Name from developer.facebook.com -->
+                <string>uCorsa</string>
+            </dict>
+        </plist>
+    </ios>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest android:versionCode="9" android:versionName="3.1" package="com.www.ucorsa">
+            <uses-permission android:name="android.permission.INTERNET"/>
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+            <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+            <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+            <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+            <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+            <permission
+                android:name="com.www.ucorsa.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+            <uses-permission android:name="com.www.ucorsa.C2D_MESSAGE"/>
+            <permission
+                android:name="com.www.ucorsa.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+            <uses-permission android:name="com.www.ucorsa.permission.MAPS_RECEIVE"/>
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+            <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+            <uses-permission android:name="android.permission.VIBRATE"/>
+            <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+            <uses-permission android:name="android.permission.GET_TASKS"/>
+            <uses-permission android:name="android.permission.WAKE_LOCK"/>
+            <uses-permission android:name="android.permission.READ_CONTACTS"/>
+            <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+            <application android:largeHeap="true" android:theme="@style/blueTheme">
+                <!-- maps -->
+                <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+                <uses-library android:name="com.google.android.maps"/>
+                <meta-data
+                    android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDszYzccEgeIyu3-aqRbkLR3whUoc4MZVs"/>
+                <!--AIzaSyDszYzccEgeIyu3-aqRbkLR3whUoc4MZVs facebook -->
+                <activity android:label="@string/app_name" android:name="com.facebook.LoginActivity"/>
+                <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+                <!-- Portrait -->
+                <activity
+                    android:configChanges="keyboardHidden|orientation"
+                    android:name="org.appcelerator.titanium.TiActivity" android:screenOrientation="portrait"/>
+                <activity
+                    android:configChanges="keyboardHidden|orientation"
+                    android:name="ti.modules.titanium.ui.TiTabActivity" android:screenOrientation="portrait"/>
+                <activity android:name="ti.modules.titanium.ui.android.TiPreferencesActivity"/>
+                <services>
+                    <service type="standard" url="tracksGps.js"/>
+                </services>
+            </application>
+        </manifest>
+        <resources/>
+    </android>
+    <modules>
+        <module platform="commonjs">ti.cloud</module>
+        <module platform="iphone">com.omorandi</module>
+        <module platform="iphone" version="5.2.9">facebook</module>
+        <module platform="android">facebook</module>
+        <module platform="android">ti.cloudpush</module>
+        <module platform="iphone">ti.map</module>
+        <module platform="android">ti.map</module>
+        <module platform="android">bencoding.alarmmanager</module>
+        <module platform="android">yy.tidialogs</module>
+        <module platform="iphone">bencoding.network</module>
+        <module platform="iphone">ti.googlesignin</module>
+    </modules>
+    <deployment-targets>
+        <target device="android">true</target>
+        <target device="ipad">false</target>
+        <target device="iphone">true</target>
+        <target device="mobileweb">false</target>
+        <target device="windows">false</target>
+    </deployment-targets>
+    <sdk-version>6.0.2.GA</sdk-version>
+    <plugins>
+        <plugin version="1.0">ti.alloy</plugin>
+    </plugins>
+    <property name="appc-app-id" type="string">57a2c4bcf33179441529df24</property>
+    <property name="ti.android.google.map.api.key">AIzaSyDszYzccEgeIyu3-aqRbkLR3whUoc4MZVs</property>
+    <property name="acs-authbase-url-development" type="string">https://secure-identity.cloud.appcelerator.com</property>
+    <property name="acs-base-url-development" type="string">https://api.cloud.appcelerator.com</property>
+    <property name="acs-oauth-secret-development" type="string">iaaSGuJlTO2NSM6ArWilFQd5NO2t8HG2</property>
+    <property name="acs-oauth-key-development" type="string">Gl9evSMIwefVoURCZ4QQJsCHvPnvwpW7</property>
+    <property name="acs-api-key-development" type="string">9p4ZDnu10HOf5DBCrtIm5GBQtiJOk179</property>
+    <property name="acs-username-development" type="string">appc_app_user_dev</property>
+    <property name="acs-password-development" type="string">leNPydsHOj54JSbXBv</property>
+    <property name="acs-authbase-url-production" type="string">https://secure-identity.cloud.appcelerator.com</property>
+    <property name="acs-base-url-production" type="string">https://api.cloud.appcelerator.com</property>
+    <property name="acs-oauth-secret-production" type="string">vOAR4P2yclum0hCtWAvfuOMZkDXjYR42</property>
+    <property name="acs-oauth-key-production" type="string">gNvc4yXpG8oB0SlGtyzo9EKbbCVwdHsI</property>
+    <property name="acs-api-key-production" type="string">6Q4mU1kuAdcsD7Ic3e5t0eFaC5rC9aqS</property>
+    <property name="acs-username-production" type="string">appc_app_user</property>
+    <property name="acs-password-production" type="string">VITTmSCuYDuAS9Xyt4</property>
+    <property name="appc-org-id" type="string">100021228</property>
+    <property name="appc-creator-user-id" type="string">271a4e9d-da75-431f-b238-ba3fe58a6111</property>
+</ti:app>

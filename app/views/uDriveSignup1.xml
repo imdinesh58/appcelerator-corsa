@@ -1,0 +1,28 @@
+	<Alloy>
+	<!--Android -->
+	<Window id ="uDriveSignupWin" onOpen="load" windowSoftInputMode="Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN" platform="android" height="100%" onAndroid:back="closeWindow">
+		 <Label id="lbl" platform="android"> Start Date & Time:</Label>
+		 <Label id="startdate" platform="android" class="custom_" onClick="date_picker"></Label>
+		 <Label id="enddate" platform="android" class="custom" onClick="date_picker"></Label>
+		 <Label id="lbl1" platform="android"> End Date & Time:</Label>
+		 <Label id="starttime" platform="android" class="custom_" onClick="time_picker"></Label>
+		<Label id="endtime" platform="android" class="custom" onClick="time_picker"></Label>		
+	</Window>
+	<!--ios -->
+	<NavigationWindow id="uDriveSignupWin" platform="ios">
+		<Window id ="uDriveWin" onOpen="load" platform="ios" class="container" height="100%" title="uDrive Signup" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+			<LeftNavButton>
+			 <ImageView class="commonBack" onClick="closeWindow" platform="ios"></ImageView>
+		</LeftNavButton>
+		<RightNavButton>
+			 <Label id="done" onClick="Validate" platform="ios">DONE</Label>
+		</RightNavButton>
+			 <Label id="lbl" platform="ios"> Start Date & Time:</Label>
+		 <Label id="startdate" platform="ios" class="custom_" onClick="date_popup"></Label>
+		  <Label id="enddate" platform="ios" class="custom" onClick="date_popup"></Label>
+			 <Label id="lbl1" platform="ios"> End Date & Time:</Label>
+		 <Label id="starttime" platform="ios" class="custom_" onClick="time_popup"></Label>
+		<Label id="endtime" platform="ios" class="custom" onClick="time_popup"></Label>	
+		</Window>
+	</NavigationWindow>
+</Alloy>

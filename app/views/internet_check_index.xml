@@ -1,0 +1,17 @@
+<Alloy>
+	<!-- Android -->
+	<Window id="win1" platform="android" onOpen="load" onAndroid:back="Dialog_show">
+		<ActionBar id="actionbar" title="Internet not connected" platform="android"/>
+		<ImageView id="img" platform="android">
+		</ImageView>
+		<Label id="refresh" onClick="retry" platform="android">Refresh</Label>
+	</Window>
+	<!-- Ios -->
+	<NavigationWindow id="win1" platform="ios">
+		<Window id="win2" class="container" onOpen="load" platform="ios" title="Internet not connected" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+			<ImageView id="img" platform="ios">
+			</ImageView>
+			<Label id="refresh" onClick="retry" platform="ios">Refresh</Label>
+		</Window>
+	</NavigationWindow>
+</Alloy>

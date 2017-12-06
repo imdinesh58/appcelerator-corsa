@@ -1,0 +1,11 @@
+	{
+	"global": { "url" : "https://api.ucorsa.com", "stripeKey" : "Bearer sk_live_IeD9uw3mIBkMxmEZxCYq0lxe"}, 
+	"env:development": { "url" : "https://api.ucorsa.com" , "stripeKey" : "Bearer sk_live_IeD9uw3mIBkMxmEZxCYq0lxe" }, 
+	"env:test": { "url" : "https://api.ucorsa.com", "stripeKey" : "Bearer sk_live_IeD9uw3mIBkMxmEZxCYq0lxe" }, 
+	"env:production": { "url" : "https://api.ucorsa.com", "stripeKey" : "Bearer sk_live_IeD9uw3mIBkMxmEZxCYq0lxe"}, 
+	"os:android": { "url" : "https://api.ucorsa.com", "stripeKey" : "Bearer sk_live_IeD9uw3mIBkMxmEZxCYq0lxe"},
+	"os:blackberry": {},
+	"os:ios": { "url" : "https://api.ucorsa.com", "stripeKey" : "Bearer sk_live_IeD9uw3mIBkMxmEZxCYq0lxe"},
+	"os:mobileweb": {},
+	"dependencies": {}
+}

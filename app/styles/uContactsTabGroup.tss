@@ -1,0 +1,67 @@
+".container":{
+	backgroundImage : '/icons/ucorsaHome.png',
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+    titleAttributes:  {
+       color:'white',
+       font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+		}
+    }
+}
+'#searchBar':{
+	top : '0%',
+	left : '0%',
+	height : '10%',
+	width : '100%',
+	hintText : 'Search Friends',
+	showCancel : true,
+	backgroundColor : "#BEB0A3",
+}
+
+'#tableFriends' : {
+	top : '0%',
+	left : '0%',
+	height : '80%',
+	width : '100%',
+	scrollable : true,
+	separatorColor : '#001E45',
+	search: '#searchBar',
+	filterAttribute : 'filter' //here is the search filter which
+}
+
+'#btnLabel' : {
+	top : '90%',
+	left : '0%',
+	height : '10%',
+	width : '100%',
+}
+
+"#tableviewContacts": {
+	top: '60%',
+	left: '0%',
+	height: '80%',
+	width: '100%',
+	scrollable:true,
+	separatorColor:'#001E45'
+}
+
+"#tableviewGroups": {
+	top: '0%',
+	left: '0%',
+	height: '80%',
+	width: '100%',
+	scrollable: true,
+	separatorColor:'#001E45'
+}
+
+"#addContact[platform=android]": {
+	showAsAction: Ti.Android.SHOW_AS_ACTION_ALWAYS,
+	icon: Ti.Android.R.drawable.ic_menu_add
+}
+
+"#addGroup[platform=android]": {
+	showAsAction: Ti.Android.SHOW_AS_ACTION_ALWAYS,
+	icon: Ti.Android.R.drawable.ic_menu_add
+}

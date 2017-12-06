@@ -1,0 +1,57 @@
+"#win":{
+	backgroundImage : '/icons/ucorsaHome.png',
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+    titleAttributes:  {
+       color:'white',
+       font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+		}
+    }
+}
+
+"#tableview[platform=android]": {
+	top: '0%',
+	left: '0%',
+	height: '100%',
+	width: '100%',
+	scrollable:true,
+	separatorColor : 'white',
+	search : 'searchView',
+	filterAttribute: 'filter',
+	backgroundColor: '#f2efe8'
+}
+"#tableview[platform=ios]": {
+	top: '0%',
+	left: '0%',
+	height: '100%',
+	width: '100%',
+	scrollable:true,
+	search : 'searchView',
+	filterAttribute: 'filter',
+	separatorColor : 'white',
+	backgroundColor: '#f2efe8'
+}
+
+"#nodata" :{
+	text : "No Events Available",
+	top : '35%',
+	left : '0%',
+	width : '100%',
+	textAlign : 'center',
+	color : '#001E45',
+	height : '15%',
+	font :{
+		fontSize : '20sp',
+		fontWeight : 'bold'
+	}
+}
+
+"#add[platform=ios]":{
+	backgroundImage: '/common/add.png',
+	width: 30,
+	height: 30,
+	right : '3%',
+	top : '5%'
+}

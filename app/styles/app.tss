@@ -1,0 +1,203 @@
+".container": {
+	backgroundImage : '/icons/ucorsaHome.png',
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+    titleAttributes:  {
+       color:'white',
+       font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+		}
+    },
+	modal: true
+}
+
+"ActionBar": {
+		apiName: "",
+		bubbleParent: false,
+		displayHomeAsUp: false,
+		homeButtonEnabled: true,
+		icon: "/images/menu.png",
+		lifecycleContainer: "",
+		navigationMode: ""
+	}
+
+'Button': {
+	height: '8%',
+	width: '10%',
+	backgroundColor: '#cccccc',
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderRadius: 6,
+	borderColor: '#001E45'
+}
+
+".Button1": {
+	height: '15%',
+	width: '30%',
+	backgroundColor: '#001E45',
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderRadius: 8	,
+	borderWidth: 2,
+	borderColor: '#fff',
+	backgroundImage: 'none',
+	backgroundGradient: {
+		type: 'linear',
+		colors: ['#aaa', '#00f']
+	}
+}
+
+"MenuItem": {
+	backgroundColor: '#001E45'
+}
+
+".commontext[platform=android]":{
+	width: '80%',
+	left: '10%',
+	height: '8%',
+	font: {
+		fontSize: '15sp',
+		fontWeight: 'bold'
+	},
+	hintTextColor: 'white',
+	color: 'white',
+	tintColor: 'white',
+	//backgroundColor: '#cccccc',
+	backgroundColor: '#BEB0A3',
+	borderStyle:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderRadius: 6
+	//borderColor: '#001E45'
+}
+
+".commontext[platform=ios]":{
+	width: '80%',
+	left: '10%',
+	height: '8%',
+	font: {
+		fontSize: '15sp',
+		fontWeight: 'bold'
+	},
+	hintTextColor: '#786658',
+	color: '#786658',
+	tintColor: '#786658',
+	backgroundColor: '#BEB0A3',
+	borderStyle:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderRadius: 6,
+	borderColor : '#001E45',
+	keyboardAppearance : Titanium.UI.KEYBOARD_APPEARANCE_DARK
+}
+
+
+".infoText":{
+	width: Titanium.UI.FILL,
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	textAlign: 'center',
+	hintTextColor: '#001E45',
+	color: '#001E45',
+	tintColor: '#001E45'
+}
+
+'Label':{
+	width: '42%',
+	bottom: '15%',
+	height: '10%',
+	textAlign: 'center',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	}
+}
+
+"PickerColumn" : {
+	height: '8%',
+	width: '15%',
+	color: '#786658',
+	backgroundColor: '#F2EFE8'
+}
+
+".pickerLabel": {
+	height: '8%',
+	width: '15%',
+	color: '#786658',
+	backgroundColor: '#F2EFE8'
+}
+
+".roundLabel" : {
+	width: "8%",
+	height: "6%",
+	color: 'black',
+	backgroundColor: '#cccccc',
+	borderStyle :Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderRadius:40,
+	borderColor:'#001E45'
+}
+
+'Picker': {
+	height: '8%',
+	selectionIndicator: true,
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	textAlign: 'center',
+	hintTextColor: '#786658',
+	tintColor: '#786658',
+	color: '#786658',
+	backgroundColor: '#cccccc',
+	borderStyle:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderRadius: 6,
+	borderColor: '#001E45'
+}
+
+".commonlabel":{
+	color: '#f2efe8', // Yellow ffe74d   // off white f2efe8
+	textAlign: 'center',
+	backgroundColor: '#001E45',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	},
+	borderRadius: 6
+}
+
+".commonBack[platform=ios]":{
+	backgroundImage: '/converted/ios_back.png',
+	width: 30,
+	height: 30,
+	left : '3%',
+	top : '5%'
+}
+
+".edit[platform=android]":{
+	backgroundImage: '/ediit.png',
+	top: "3%",
+	width: "11%",
+	height: "7%",
+	right: '10%'
+}
+
+".edit[platform=ios]":{
+	backgroundImage: '/ediit.png',
+	top: "13%",
+	width: "13%",
+	height: "7%",
+	right: '8%'
+}
+
+'.Label_home':{
+	color: "#001E45",
+	textAlign: "left",
+	left: "22%",
+	right: "14",
+	height: "auto",
+	font:{
+		fontWeight: 'bold',
+		fontSize: '15dp'
+	}
+}

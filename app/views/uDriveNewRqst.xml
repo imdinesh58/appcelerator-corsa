@@ -1,0 +1,23 @@
+<Alloy>
+	<!-- Android -->
+	<Tab id="DNR" title="Schedule" platform="android">
+		<Window id="win" platform="android" onOpen="load" onAndroid:back="closeWindow">
+			<TableView id="tableview" platform="android" searchAsChild="true"></TableView>
+			<Label id="nodata" platform="android">No Events Available</Label>	
+		</Window>
+	</Tab>
+	<!-- ios -->
+	<Tab id="DNR" title="Schedule" platform="ios" icon="/images/drive_wheel2.png">
+		<Window id="win" platform="ios" onOpen="load" title="uDrive" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+			<LeftNavButton>
+				<ImageView  class="commonBack" onClick="closeWindow" platform="ios"></ImageView>
+			</LeftNavButton>
+			<RightNavButton>
+			 <ImageView id="add" onClick="addScheduleEvent" platform="ios"></ImageView>
+			</RightNavButton>
+			<TableView id="tableview" platform="ios" searchAsChild="true"></TableView>
+			<Label id="nodata" platform="ios">No Events Available</Label>		
+		</Window>
+	</Tab>
+</Alloy>
+

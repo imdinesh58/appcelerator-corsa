@@ -1,0 +1,22 @@
+<Alloy>
+	<!-- Android -->
+	<Tab id="circlesTabId" title="circles" platform="android">
+		<Window id="winCircles" onOpen="showCircles" platform="android" onAndroid:back="closeWindow">
+			<TableView id="tableCircles" onClick="onClick" searchAsChild="true" platform="android"></TableView>
+			<Label id="nodata" platform="android">No Circles found</Label>
+		</Window>
+	</Tab>
+	<!-- ios -->
+	<Tab id="circlesTabId" title="CIRCLES" platform="ios"  icon="/icons_ios/circle.png">
+		<Window id="winCircles"  onOpen="showCircles" platform="ios" title="uCorsa" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK" class="container">
+			<LeftNavButton>
+				<ImageView  class="commonBack" onClick="closeWindow" platform="ios"></ImageView>
+			</LeftNavButton>
+			<RightNavButton>
+				<ImageView id="add" onClick="addNewCircle" platform="ios" ></ImageView>
+			</RightNavButton>
+			<TableView id="tableCircles" searchAsChild="true" platform="ios" onClick="onClick"></TableView>
+			<Label id="nodata" platform="ios">No Circles found</Label>
+		</Window>
+	</Tab>
+</Alloy>

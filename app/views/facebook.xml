@@ -1,0 +1,20 @@
+<!-- <Alloy>
+<Window id="home" platform="android,ios" onOpen="loadfacebook" onAndroid:back="Close">
+<ActionBar id ="actionbar" title="Facebook" platform="android"></ActionBar>
+</Window>
+</Alloy> -->
+
+<Alloy>
+	<!-- Android -->
+	<Window id="home" platform="android" onOpen="loadfacebook" onAndroid:back="Close">
+		<ActionBar id ="actionbar" title="Facebook Login" platform="android"></ActionBar>
+	</Window>
+	<!-- ios -->
+	<NavigationWindow id="home" platform="ios">
+		<Window id="home" platform="ios" onOpen="loadfacebook"  platform="ios" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK" class="container" title="Facebook Login">
+			<LeftNavButton>
+				<ImageView  class="commonBack" onClick="Close" platform="ios"></ImageView>
+			</LeftNavButton>
+		</Window>
+	</NavigationWindow>
+</Alloy>

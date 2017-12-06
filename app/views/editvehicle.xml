@@ -1,0 +1,21 @@
+<Alloy>
+	<!-- Android -->
+	<Window id="win1" onOpen="loadfromservice" platform="android" onAndroid:back="WindowClose">		
+        <TableView id="tableview" platform="android" searchAsChild="false"></TableView>		
+		<Label id="nodata" platform="android">No Vehicles found</Label>
+		<ImageView id="add__" onClick="add" platform="android"></ImageView>
+	</Window>
+	<!-- ios -->
+	<NavigationWindow id="win1" platform="ios">
+	<Window id="win2" onOpen="loadfromservice" platform="ios" class="container" title="Vehicles" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+		<LeftNavButton>
+			 <ImageView  class="commonBack" onClick="WindowClose" platform="ios"></ImageView>
+		</LeftNavButton>		
+        <TableView id="tableview" platform="ios" searchAsChild="false"></TableView>		
+		<RightNavButton>
+			<ImageView id="add" onClick="add" platform="ios"></ImageView>
+		</RightNavButton>
+		<Label id="nodata" platform="ios">No Vehicles found</Label>
+	</Window>
+	</NavigationWindow>
+</Alloy>

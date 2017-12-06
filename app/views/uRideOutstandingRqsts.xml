@@ -1,0 +1,21 @@
+<Alloy>
+	<!-- Android -->
+	<Tab id="OR" title="RIDE REQUESTS" platform="android">
+		<Window id="win" platform="android" onOpen="load" class="container" onAndroid:back="closeWindow">
+			<TableView id="tableview" platform="android" onScroll="showFulltable"></TableView>
+			<Label id="nodata" platform="android">No uRide requests found</Label>
+			<ActivityIndicator id="activityIndicator" platform="android"/>
+		</Window>
+	</Tab>
+	<!-- IOS -->
+	<Tab id="OR" title="RIDE REQUESTS" icon="/images/ride_request.png" platform="ios" backgroundColor="#001E45">
+		<Window id="win" platform="ios" onOpen="load" title="uRide" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK" class="container">
+			<LeftNavButton>
+				<ImageView  class="commonBack" onClick="closeWindow" platform="ios"></ImageView>
+			</LeftNavButton>
+			<TableView id="tableview" platform="ios"  onScroll="showFulltable"></TableView>
+			<Label id="nodata" platform="ios">No uRide requests found</Label>
+			<ActivityIndicator id="activityIndicator" platform="ios"/>
+		</Window>
+	</Tab>
+</Alloy>

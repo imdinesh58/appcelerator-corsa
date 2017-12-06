@@ -1,0 +1,19 @@
+<Alloy>
+	<!-- Android -->
+	<Tab id="RH" title="History" platform="android">
+		<Window id="win" platform="android" onOpen="load" onAndroid:back="closeWindow">
+			<Label id="loadmore" onClick="LoadMore" platform="android">Load More</Label>
+			<TableView id="tableview" platform="android" onScrollend="showLoadMore"></TableView>
+		</Window>
+	</Tab>
+		<!-- IOS -->
+	<Tab id="RH" title="HISTORY" platform="ios" icon="/images/ride_history.png" backgroundColor="#001E45">
+		<Window id="win" platform="ios" onOpen="load" title="uRide" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+			<LeftNavButton>
+				 <ImageView  class="commonBack" onClick="closeWindow" platform="ios"></ImageView>
+			</LeftNavButton>
+			<Label id="loadmore" onClick="LoadMore" platform="ios">Load More</Label>
+			<TableView id="tableview" platform="ios" onScrollend="showLoadMore"></TableView>
+		</Window>
+	</Tab>
+</Alloy>

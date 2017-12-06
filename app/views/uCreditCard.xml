@@ -1,0 +1,24 @@
+<Alloy>
+	<Window id="creditCard" height="70%" width="80%" onOpen="onload" platform="android" windowSoftInputMode="Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN">
+		<ScrollView id="sview" class="container">
+			<Label id="topLabel">Credit Card Details</Label>
+			<TextField id = "ccNumber" class="commontext"></TextField>
+			<TextField id = "ccExpMonth" class="commontext"></TextField>
+			<TextField id = "ccExpYear" class="commontext"></TextField>
+			<TextField id = "cvv" class="commontext"></TextField>
+			<Label id="cancel" class="commonlabel" onClick="doCancel">Cancel</Label>
+			<Label id="save" class="commonlabel" onClick="doSave">Save</Label>
+		</ScrollView>
+	</Window>
+	<Window id="creditCard" height="70%" width="80%" onOpen="onload" platform="ios" modal="true">
+		<ScrollView id="sview" class="container">
+			<Label id="topLabel">Credit Card Details</Label>
+			<TextField id = "ccNumber" class="commontext"></TextField>
+			<TextField id = "ccExpMonth" class="commontext"></TextField>
+			<TextField id = "ccExpYear" class="commontext"></TextField>
+			<TextField id = "cvv" class="commontext"></TextField>
+			<Label id="cancel" class="commonlabel" onClick="doCancel">Cancel</Label>
+			<Label id="save" class="commonlabel" onClick="doSave">Save</Label>
+		</ScrollView>
+	</Window>
+</Alloy>

@@ -1,0 +1,62 @@
+'#username': {
+	top: '20%',
+	hintText: 'E-mail'
+}
+
+'#password': {
+	top: '34%',
+	hintText: 'password',
+	passwordMask: true
+}
+
+'#login': {
+	top: '47%',
+	width: '80%'
+}
+
+'#facebook': {
+	title: 'Facebook',
+	top: '67%',
+	width: '37%',
+	left: '10%'
+}
+
+'#gplus':{
+	title: 'Google+',
+	top: '67%',
+	width: '37%',
+	right: '10%'
+}
+
+"#forgotpassword[platform=ios]":{
+	top: '58.5%',
+	left: '25%',
+	width: '50%',
+	height: '6%',
+	color: '#001E45',
+	textAlign: 'center',
+	text: 'Forgot Password?',
+	font: {
+		fontSize: '15sp',
+		fontFamily: 'Fira Sans',
+		fontWeight: 'bold'
+	}
+}
+
+"#forgotpassword[platform=android]":{
+	top: '58%',
+	left: '31%',
+	width: '40%',
+	height: '6%',
+	text: 'Forgot Password?',
+	color: '#001E45'
+}
+"#hyper[platform=android]":{
+	attributes: [
+		{
+			type: Ti.UI.ATTRIBUTE_UNDERLINES_STYLE,
+			value: Ti.UI.ATTRIBUTE_UNDERLINE_STYLE_SINGLE,
+			range: [0, 16]
+		}
+	]
+}

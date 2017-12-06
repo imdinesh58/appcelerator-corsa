@@ -1,0 +1,19 @@
+<Alloy>
+	<Window id="win" platform="android" class="container" onOpen="loadWin" fullscreen="false" windowSoftInputMode="Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN" onAndroid:back="Close">
+		<TableView id="table">
+		</TableView>
+		<TextField id="textfield" platform="android"></TextField>
+		<Label id="button" onClick="send"></Label>
+	</Window>
+	<NavigationWindow id="win" platform="ios">
+		<Window id="win1" platform="ios" class="container" onOpen="loadWin" title="Messages" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+			<LeftNavButton>
+				<ImageView class="commonBack" platform="ios" onClick="Close"></ImageView>
+			</LeftNavButton>
+			<TableView id="table" platform="ios">
+			</TableView>
+			<TextField id="textfield" onChange="focusKey"></TextField>
+			<Label id="button" onClick="send"></Label>
+		</Window>
+	</NavigationWindow>
+</Alloy>

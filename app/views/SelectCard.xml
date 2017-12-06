@@ -1,0 +1,19 @@
+<Alloy>
+	<!-- Android -->
+	<Window id="win" onOpen="loadfromservice" platform="android" onAndroid:back="WindowClose">
+		<ImageView id="add" platform="android" onSingletap="AddPay"></ImageView>
+		<TableView id="tableview" platform="android" searchAsChild="false"></TableView>		
+		<Label id="nodata" platform="android">No Card or Bank details found</Label>
+	</Window>
+	<!-- ios -->
+	<NavigationWindow id="win" platform="ios">
+	<Window id="win1" onOpen="loadfromservice" platform="ios" class="container" title="Select Card to Add Tips" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+		<LeftNavButton>
+			 <ImageView  class="commonBack" onClick="WindowClose" platform="ios"></ImageView>
+		</LeftNavButton>
+		<ImageView id="add" platform="ios" onSingletap="AddPay" ></ImageView>
+		<TableView id="tableview" platform="ios" searchAsChild="false"></TableView>		
+		<Label id="nodata" platform="ios">No Card or Bank details found</Label>
+	</Window>
+	</NavigationWindow>
+</Alloy>

@@ -1,0 +1,42 @@
+"#home":{
+	backgroundImage : '/icons/ucorsaHome.png',
+	orientationModes: [Ti.UI.PORTRAIT],
+	barColor: '#001E45',
+    titleAttributes:  {
+       color:'white',
+       font : {
+			fontSize : '15sp',
+			fontWeight : 'bold'
+		}
+    }
+}
+"#tableview[platform=android]": {
+	top: '1%',
+	left: '0%',
+	height: '100%',
+	width: '100%',
+	separatorColor:'#001E45',
+	scrollable:true
+}
+
+"#tableview[platform=ios]": {
+	top: '1%',
+	left: '0%',
+	height: '100%',
+	width: '100%',
+	scrollable:true,
+	backgroundColor:'#f2efe8',
+	separatorStyle : Titanium.UI.iPhone.TableViewSeparatorStyle.NONE
+}
+
+'#skip':{
+	top : '5%',
+	text : 'Skip',
+	right : '4%',
+	width : '15%',
+	height : '9%',
+	font : {
+		fontSize : '15sp',
+		fontWeight : 'bold'
+	}
+}

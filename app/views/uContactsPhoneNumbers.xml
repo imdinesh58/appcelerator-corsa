@@ -1,0 +1,24 @@
+<Alloy>
+	<!-- Android -->
+	<Tab id="phoneNumbersTabId" title="phone" platform="android">
+		<Window id="winContacts" onOpen="loadContacts" platform="android" onAndroid:back="closeWindow">
+			<TableView id="tableContacts" onClick="onClick" searchAsChild="true" platform="android"></TableView>
+			<ActivityIndicator id="activityIndicator" platform="android"/>
+		</Window>
+	</Tab>
+	<!-- ios -->
+	<Tab id="phoneNumbersTabId" title="PHONE" platform="ios" icon="/icons_ios/phone.png">
+		<Window id="winContacts" onOpen="loadContacts" platform="ios" title="uCorsa" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+			<LeftNavButton>
+				<ImageView  class="commonBack" onClick="closeWindow" platform="ios"></ImageView>
+			</LeftNavButton>
+			<RightNavButtons>
+				<ImageView id="add2" onClick="AddManually" platform="ios"></ImageView>
+				<ImageView id="add" onClick="Connect" platform="ios"></ImageView>
+				<ImageView id="add0" platform="ios"></ImageView>
+			</RightNavButtons>
+			<TableView id="tableContacts" onClick="onClick" searchAsChild="true" platform="ios" onTouchstart="onClick" onChange="onClick"></TableView>
+			<ActivityIndicator id="activityIndicator" platform="ios"/>
+		</Window>
+	</Tab>
+</Alloy>

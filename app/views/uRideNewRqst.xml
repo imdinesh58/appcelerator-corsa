@@ -1,0 +1,45 @@
+<Alloy>
+	<!-- Android -->
+	<Tab id="RNR" title="Schedule" platform="android">
+		<Window  id ="win" onOpen="load" platform="android" height="100%" onAndroid:back="closeWindow">
+			<View id="accessView">
+			<Label id="date" platform="android" class="custom" zIndex="-1" onSingletap="date_picker"></Label>
+			<Label id="time" platform="android" class="custom" zIndex="-1" onSingletap="time_picker">Time</Label>
+			<ImageView id="IMG1" platform="android"></ImageView>
+			<ImageView id="IMG2" platform="android"></ImageView>
+			<ImageView id="IMG3" platform="android"></ImageView>
+			<ImageView id="IMG4" platform="android"></ImageView>
+			<Label id="drivers" platform="android" class="customLabel">Available Drivers</Label>
+			<Label id="ridefrom" platform="android" class="customLabel" onClick="showMap">Ride From</Label>
+			<Label id="rideto" platform="android" class="customLabel" onClick="showMap">Ride To</Label>
+			<Label id="riders" platform="android" class="customLabel" onSingletap="pickRiders"># of Riders</Label>
+			<Label id="comment" onSingletap="comment" class="customLabel">Additional Notes</Label>
+			<Label id="send" class="commonlabel" platform="android" onClick="send_rideDetails">Send</Label>
+			</View>
+			<Label id="Refresh" onClick="ReloadScreen">Refresh</Label>
+		</Window>
+	</Tab>
+	<!-- ios -->
+	<Tab id="RNR" title="SCHEDULE" platform="ios" icon="/icons_ios/schedule.png" backgroundColor="#001E45">
+		<Window  id ="win" onOpen="load" platform="ios" height="100%" title="uRide" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+			<LeftNavButton>
+				<ImageView  class="commonBack" onClick="closeWindow" platform="ios"></ImageView>
+			</LeftNavButton>
+			<View id="accessView">
+			<Label id="date" platform="ios" class="custom" zIndex="-1" onSingletap="date_popup"></Label>
+			<Label id="time" platform="ios" class="custom" zIndex="-1" onSingletap="time_popup">Time</Label>
+			<ImageView id="IMG1" platform="ios"></ImageView>
+			<ImageView id="IMG2" platform="ios"></ImageView>
+			<ImageView id="IMG3" platform="ios"></ImageView>
+			<ImageView id="IMG4" platform="ios"></ImageView>
+			<Label id="drivers" platform="ios" class="customLabel">Available Drivers</Label>
+			<Label id="ridefrom" platform="ios" class="customLabel" onClick="showMap">Ride From</Label>
+			<Label id="rideto" platform="ios" class="customLabel" onClick="showMap">Ride To</Label>
+			<Label id="riders" platform="ios" class="customLabel" onSingletap="pickRiders"># of Riders</Label>
+			<Label id="comment" onSingletap="comment" class="customLabel">Additional Notes</Label>
+			<Label id="send" class="commonlabel" platform="ios" onClick="send_rideDetails">Send</Label>
+			</View>
+			<Label id="Refresh" onClick="ReloadScreen">Refresh</Label>
+		</Window>
+	</Tab>	
+</Alloy>

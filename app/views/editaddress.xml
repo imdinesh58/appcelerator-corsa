@@ -1,0 +1,25 @@
+<Alloy>
+	<!-- Android -->
+	<Window id="win1" onOpen="load" platform="android" onAndroid:back="closeWindow">	
+		<TextField  id = "address1" platform="android" class="commontext"></TextField>
+		<TextField  id = "address2" platform="android" class="commontext"></TextField>
+		<TextField  id = "city" platform="android" class="commontext"></TextField>
+		<TextField  id = "state" platform="android" class="commontext"></TextField>
+		<TextField  id = "zipcode" platform="android" class="commontext"></TextField>
+		<Label id="add" class="commonlabel" platform="android" onSingletap="check">Save</Label>
+	</Window>
+	<!-- ios -->
+	<NavigationWindow id="win1" platform="ios">
+	<Window id="win2" onOpen="load" platform="ios" class="container" title="Add Address" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">	
+		<LeftNavButton>
+			 <ImageView  class="commonBack" onClick="closeWindow" platform="ios"></ImageView>
+		</LeftNavButton>
+		<TextField  id = "address1" platform="ios" class="commontext"></TextField>
+		<TextField  id = "address2" platform="ios" class="commontext"></TextField>
+		<TextField  id = "city" platform="ios" class="commontext"></TextField>
+		<TextField  id = "state" platform="ios" class="commontext"></TextField>
+		<TextField  id = "zipcode" platform="ios" class="commontext"></TextField>
+		<Label id="add" class="commonlabel" platform="ios" onSingletap="check">Save</Label>
+	</Window>
+	</NavigationWindow>	
+</Alloy>

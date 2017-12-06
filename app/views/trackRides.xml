@@ -1,0 +1,18 @@
+<Alloy>
+	<!-- Android -->
+	<Window id="win2" platform="android" onOpen="ShowIndicator" onAndroid:back="closeWindow">
+		<ActionBar id="actionbar" title="                     Track Rides" platform="android"/>
+		<TableView id="tableview" platform="android"></TableView>
+		<Label id="nodata" platform="android">No Rides to track</Label>
+	</Window>
+	<!-- ios -->
+	<NavigationWindow id="win2" platform="ios">
+		<Window id="win3" platform="ios" class="container" onOpen="ShowIndicator" title="Track Rides" fullscreen="false" statusBarStyle="Ti.UI.iPhone.StatusBar.TRANSLUCENT_BLACK">
+				<LeftNavButton>
+			 <ImageView  class="commonBack" onClick="closeWindow" platform="ios"></ImageView>
+		</LeftNavButton>
+			<TableView id="tableview" platform="ios"></TableView>
+			<Label id="nodata" platform="ios">No Rides to track</Label>
+		</Window>
+	</NavigationWindow>
+</Alloy>
